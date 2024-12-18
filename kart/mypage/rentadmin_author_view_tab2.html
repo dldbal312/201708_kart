@@ -1,0 +1,574 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>대여관리 상세보기 &lt; 마이페이지 &lt; 미술자원공유센터</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="문화체육관광부 미술자원공유센터,문화체육관광부,미술자원공유센터">
+	<meta name="description" content="문화체육관광부 미술자원공유센터">
+	<meta name="author" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:description" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:image" content="#">
+	<meta property="og:url" content="#">
+	<meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
+	<!-- Favicon -->
+	<link rel="SHORTCUT ICON" href="../resources/images/common/favicon.ico">
+	<link rel="apple-touch-icon" href="../resources/images/common/bookmark.png"><!-- 애플 아이콘 -->
+	<link rel="apple-touch-icon-precomposed" href="../resources/images/common/bookmark.png"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/inc.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/form.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/sub.css"><!-- 서브페이지에서만 호출 -->
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+	<![endif]-->
+	<!-- Javascript -->
+	<script type="text/javascript" src="../resources/js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/modernizr.custom.31356.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../resources/js/lib/html5.js"></script>
+		<script type="text/javascript" src="../resources/js/lib/respond.min.js"></script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['NanumSquare','Noto Sans KR']
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.placeholders.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.lazyload.min.js"></script>
+	<!-- plugins -->
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/ui-select/select2.css">
+	<script type="text/javascript" src="../resources/plugins/ui-select/jquery.ui-selectBox.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.theme.default.css">
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel.js"></script>
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel2.thumbs.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 달력 plugin -->
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/moment.latest.min.js"></script>
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/pignose.calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/pignose-calendar/pignose.calendar.css">
+</head>
+<body>
+<!-- 스킵 네비게이션(s) -->
+<div id="skipNavigation">
+	<ul>
+		<li>
+			<a href="#contents">본문 바로가기</a>
+		</li>
+		<li>
+			<a href="#headerGnb">전체메뉴 바로가기</a>
+		</li>
+		<li>
+			<a href="#footer">하단 바로가기</a>
+		</li>
+	</ul>
+</div>
+<!--// 스킵 네비게이션(e) -->
+
+<div id="wrap">
+	<!-- header영역(s) -->
+	<header class="header sub_header" id="header">
+		<div class="inner">
+			<h1 class="head_logo">
+				<a href="/" class="inc_ico ico_logo">ART-SHARING 미술자원공유서비스</a>
+			</h1>
+			<div class="clr">
+				<div class="head_user">
+					<a href="#">로그인</a>
+					<a href="#">회원가입</a>
+				</div>
+				<button type="button" class="btn_search" id="headSerachOpen" title="검색"><span class="inc_ico ico_search">검색</span></button>
+				<!-- 검색버튼 클릭시 나오는 영역 -->
+				<div class="hdsearch_area trns">
+					<form>
+						<fieldset>
+							<legend>미술자원공유서비스 검색영역</legend>
+							<div class="hd_search">
+								<label for="searchTxt" class="blind">검색어 입력</label>
+								<input type="text" name="searchTxt" id="searchTxt" class="inp" placeholder="검색어를 입력하세요">
+								<!-- (개발요소)검색어에 텍스트 입력시 삭제버튼 노출됩니다. -->
+								<div class="btn_wrap">
+									<div class="clr">
+										<button type="button" title="검색어 삭제"><span class="inc_ico ico_del">검색어 삭제</span></button>
+									</div>
+									<div class="clr">
+										<button type="button" title="검색"><span class="inc_ico ico_search2">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn_close"><span class="is_ico isi_close">닫기</span></a>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //검색버튼 클릭시 나오는 영역 -->
+
+				<!-- pc에서만 나오는 메뉴 -->
+				<!-- (개발요소) 해당 페이지일 경우 li에 on클래스 넣어줍니다. -->
+				<div class="head_menu" id="head_menu">
+					<ul class="nav_menu">
+						<li><a href="#">작품</a></li>
+						<li><a href="#">작가</a></li>
+						<li><a href="#">대여업체</a></li>
+						<li><a href="#">화랑</a></li>
+						<li>
+							<a href="#">알림마당</a>
+							<ul class="depth2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">뉴스/홍보</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">서비스 소개</a>
+							<ul class="depth2">
+								<li><a href="#">예술경영센터</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //pc에서만 나오는 메뉴 -->
+
+				<button type="button" id="headerGnb" class="btnh_gnb" title="전체메뉴"><span class="trns"><i>전체메뉴</i></span></button>
+				<!-- 전체메뉴 클릭시 나오는 메뉴 -->
+				<nav class="nav trns" id="nav">
+					<div class="user_menu">
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+					</div>
+					<div class="nav_menu_wrap">
+						<ul class="nav_menu">
+							<li><a href="#">작품</a></li>
+							<li><a href="#">작가</a></li>
+							<li><a href="#">대여업체</a></li>
+							<li><a href="#">화랑</a></li>
+							<li>
+								<a href="#">알림마당</a>
+								<ul class="depth2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">뉴스/홍보</a></li>
+									<li><a href="#">자료실</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">서비스 소개</a>
+								<ul class="depth2">
+									<li><a href="#">예술경영센터</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn_close"><span class="is_ico isi_close2">닫기</span></a>
+				</nav>
+				<!-- //전체메뉴 클릭시 나오는 메뉴 -->
+			</div>		
+		</div>	
+	</header>
+	<!-- //header영역(e) -->
+
+	<!-- 서브메뉴 영역(s) -->
+	<div id="leftMenu" class="lnb_wrap">
+		<nav class="lnb_nav">
+			<h2 class="blind">마이페이지</h2>
+			<h3 class="now_menu">대여관리</h3>
+			<!-- (개발요소) 해당 페이지일 경우 li에 class="active"를 넣어 줍니다. -->
+			<ul class="lnb_menu">
+				<li>
+					<a href="../mypage/myscrap_list.html"><span>마이스크랩</span></a>
+				</li>
+				<li>
+					<a href="../mypage/userinfo_write.html"><span>회원정보</span></a>
+				</li>
+				<li>
+					<a href="../mypage/inquiry_list.html"><span>1:1문의</span></a>
+				</li>
+				<li>
+					<a href="../mypage/art_manage_list.html"><span>작품관리</span></a>
+				</li>
+				<li class="active">
+					<a href="../mypage/rentadmin_author_list.html"><span>대여관리</span></a>
+				</li>
+				<li>
+					<a href="../mypage/display_admin_list.html"><span>전시/전속관리</span></a>
+				</li>
+			</ul>
+			<span class="state_arr">서브메뉴 전체보기</span>
+		</nav>
+	</div>
+	<!--// 서브메뉴 영역(e) -->
+	
+	<!-- content 영역(s) -->
+	<div id="contents" class="sub_wrap">
+		
+		<section class="sub_contents">
+			<section class="section1">
+				<h4 class="blind">작가정보</h4>
+				<div class="view_basic_box">
+					<div class="clearfix">
+						<div class="thumb">
+							<div class="img border">
+								<img src="../resources/images/temp/temp_author_list1.jpg" alt="홍길동" class="imgexpend">
+							</div>
+						</div>
+						<div class="tit_view">
+							<div class="tit_detail_view">
+								<dl>
+									<dt class="sectit2">홍길동</dt>
+									<dd class="txt_desc1 ftclr_gray1">
+										<span class="blind">출생년도, 국적 : </span>(1928, 대한민국) 
+										<a href="#" class="sectit5 ftclr_gray1" title="작가정보">자세히 보기</a>
+									</dd>
+								</dl>
+								<dl class="pos_wrap">
+									<dt class="blind">계약상태</dt>
+									<dd class="cate_wrap">
+										<!-- (!개발) 계약중 : border_cate1 / 계약만료 : border_cate2 / 계약가능 : border_cate3 / 계약금지,계약취소 border_cate4  -->
+										<span class="category border_cate4">계약취소</span>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="view_info">
+							<table class="view_basic_info txt_desc1">
+								<caption>기본정보</caption>
+								<colgroup>
+									<col class="col1">
+									<col>
+								</colgroup>	
+								<tbody>	
+									<tr>
+										<th scope="row">이메일</th>
+										<td class="ftclr_gray1">
+											<a href="mailto:hgd@mail.com" class="ftclr_gray1">hgd@mail.com</a >
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">홈페이지</th>
+										<td class="ftclr_gray1">
+											<a href="http://www.gokams.or.kr" title="새창열림" target="_blank"  class="ftclr_gray1">http://www.gokams.or.kr</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">페이스북</th>
+										<td class="ftclr_gray1">
+											<a href="http://www.facebook.com/gokams" title="새창열림" target= "_blank" class="ftclr_gray1">http://www.facebook.com/gokams</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">계약기간</th>
+										<td class="ftclr_gray1">
+											2016.9.1 ~ 2017.8.31
+											<div class="btn_ud_ctrl sectit5">
+												<a href="#" class="ftclr_point1">작품목록</a>
+												<a href="#" class="ftclr_point1">계약취소</a>
+												<a href="#" class="ftclr_point1">재계약</a>
+											</div>
+										</td>
+									</tr>
+									<tr class="total_area">
+										<th scope="row">등록작품</th>
+										<td class="sectit3 bold">
+											총 <span class="ftclr_point1">28</span>건 <br class="s320">
+											(대여실적 5건, 2,000,000원)
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="list_style txt_desc3 ftclr_gray2">
+								<p class="list_ico imp">실적 착오 입력시 관리자에게 문의하여 수정/삭제가 가능합니다.</p>
+							</div>
+						</div>
+					</div>
+					<div class="botbox btn_wrap">
+						<div class="clc">
+							<button type="button" class="btnsM btn_sty1">
+								<span>매출이력 업로드</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="sub_mgt5">
+					<div class="tit_area">
+						<h5 class="sectit3">
+							대여실적 첨부파일 업로드<a href="#" class="unit_txt"><span class="ftclr_gray1 txt_desc2 underline">샘플양식 다운로드</span></a>
+						</h5>
+					</div>
+					<div class="filebox2 txt_desc1">
+						<div class="flex_group split rental_view">
+							<div class="cl input_wrt_wrap">
+								<div class="flex_group split">
+									<div class="cl input_wrt_wrap inp_reset">
+										<input type="text" id="fileUpload" title="첨부파일 입력" class="size_full" placeholder="파일을 선택해주세요." />
+										<button type="button" class="btn_reset">
+											<i class="is_ico isi_reset">입력삭제</i>
+										</button>
+									</div>
+									<div class="cl btn_wrap">
+										<label for="fileBtn" class="btnsS btn_sty4">파일검색</label>
+										<input type="file" id="fileBtn" class="blind">
+									</div>
+								</div>
+							</div>
+							<div class="clr btn_wrap">
+								<button type="button" class="btnsS btn_sty1"><span>저장하기</span></button>
+							</div>
+						</div>
+						
+					</div>
+					<dl class="bbs_write">
+						<dt class="sectit3"></dt>
+						<dd class="txt_desc1 ftclr_gray1">
+					</dl>
+				</div>
+			</section>
+			<section class="section1 sub_mgt5">
+				<!-- tab(s) -->
+				<ul class="link_tab_style1 dex3">
+					<li><a href="../mypage/rentadmin_author_view_tab1.html" role="button"><span>권한계약이력</span></a></li>
+					<li class="active"><a href="../mypage/rentadmin_author_view_tab2.html" role="button"><span>작품목록</span></a></li>
+					<li><a href="../mypage/rentadmin_author_view_tab3.html" role="button"><span>매출이력</span></a></li>
+				</ul>
+				<!-- //tab(e) -->
+
+				<!-- 작품목록 탭 (s) -->
+				<div class="sub_mgt1">
+					<h4 class="blind sectit2">작품목록</h4>
+					<form>
+						<fieldset>
+							<legend>상세검색</legend>
+							<!-- list_top -->
+							<div class="split list_top">
+								<span class="cl txt_desc1 border">
+									총 <b class="ftclr_point1">200</b>건
+								</span>
+								<div class="clr search">
+									<div class="input_wrt_wrap">
+										<input type="text" class="inp" title="검색어 입력" placeholder="검색어 입력해주세요." />
+										<a href="#" class="btn_search"><i class="is_ico isi_search">검색</i></a>
+									</div>
+								</div>
+							</div>
+							<!-- //list_top -->
+						</fieldset>
+					</form>
+					<!-- list_top -->
+					<div class="sub_mgt4">
+						<div class="split_mix">
+							<div class="cl_mix">
+								<ul class="list_style txt_desc1 ftclr_gray2">
+									<li class="list_ico imp">대여중으로 처리할 경우 작품목록과 엑셀파일에 해당작품이 대여중임을 표시하게 됩니다.</li>
+									<li class="list_ico imp">대여중은 해당 작품 정보를 특정 업체가 보유중임을 표시하는 용도입니다. 실제 매출 발생시 매출이력을 별도로 입력해주셔야 합니다.</li>
+								</ul>
+							</div>
+							<div class="clr_mix btn_wrap va_b">
+								<div class="clr">
+									<button type="button" class="btnsXS btn_sty1">
+										<span>엑셀 다운로드</span>
+									</button>
+								</div>
+								<div class="clr">
+									<button type="button" class="btnsXS btn_sty2">
+										<span>대여중 처리</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="thumb_list sub_mgt4">
+						<li class="list_area">
+							<div class="cl thumb">
+								<div class="img">
+									<img src="../resources/images/temp/temp_work_list1.jpg" alt="The Eternal Kitchen Violence" class="imgexpend" />
+								</div>
+							</div>
+							<div class="cl wsp_normal">
+								<dl>
+									<dt class="sectit3">바람에게서 듣다</dt>
+									<dd>
+										<dl class="view_info_list lineclamp3">
+											<dt class="blind">작가명 :</dt>
+											<dd class="txt_desc2 ftclr_gray1">홍길동</dd>
+											<dt class="blind">작품 제작년도 :</dt>
+											<dd class="txt_desc2 ftclr_gray1">1979 제작</dd>
+											<dt class="blind">재료 :</dt>
+											<dd class="txt_desc2 ftclr_gray1 bd_none">캔버스 위 유채물감</dd>
+											<dt class="blind ge-s768">작품크기 :</dt>
+											<dd class="txt_desc2 ftclr_gray1 d_b ge-s768">80.3cm × 130.3cm, 31.61inch × 51.3inch</dd>
+										</dl>
+									</dd>
+								</dl>
+								<div class="info_price">
+									<span class="txt_desc1">작품가</span>
+									<span class="sectit2">
+										<span class="ftclr_point1">15,000,000</span>원
+									</span>
+								</div>
+							</div>
+							<div class="clr">
+								<div class="choice_wrap box_btn">
+									<input type="checkbox" id="chk_2" name="chk" class="img_checkbox">
+									<label for="chk_2"><i></i><span class="blind">대여중처리</span></label>
+								</div>
+							</div>
+						</li>
+						<li class="list_area">
+							<div class="cl thumb">
+								<div class="img">
+									<img src="../resources/images/temp/temp_work_list2.jpg" alt="바람에게서 듣다" class="imgexpend" />
+								</div>
+							</div>
+							<div class="cl wsp_normal">
+								<dl>
+									<dt class="sectit3 mgr0">바람에게서 듣다</dt>
+									<dd>
+										<dl class="view_info_list lineclamp3">
+											<dt class="blind">작가명 :</dt>
+											<dd class="txt_desc2 ftclr_gray1">홍길동</dd>
+											<dt class="blind">작품 제작년도 :</dt>
+											<dd class="txt_desc2 ftclr_gray1">1979 제작</dd>
+											<dt class="blind">재료 :</dt>
+											<dd class="txt_desc2 ftclr_gray1 bd_none">캔버스 위 유채물감</dd>
+											<dt class="blind ge-s768">작품크기 :</dt>
+											<dd class="txt_desc2 ftclr_gray1 d_b ge-s768">80.3cm × 130.3cm, 31.61inch × 51.3inch</dd>
+											<dt class="blind">대여여부 :</dt>
+											<dd class="txt_desc2 d_b">타업체 대여중</dd>
+										</dl>
+									</dd>
+								</dl>
+								<div class="info_price">
+									<span class="txt_desc1">작품가</span>
+									<span class="sectit2">
+										<span class="ftclr_point1">15,000,000</span>원
+									</span>
+								</div>
+							</div>
+						</li>
+						<li class="list_area">
+							<div class="cl thumb">
+								<div class="img">
+									<img src="../resources/images/temp/temp_work_list3.jpg" alt="바람에게서 듣다" class="imgexpend" />
+								</div>
+							</div>
+							<div class="cl wsp_normal">
+								<dl>
+									<dt class="sectit3 mgr0">바람에게서 듣다</dt>
+									<dd>
+										<dl class="view_info_list lineclamp3">
+											<dt class="blind">작가명 :</dt>
+											<dd class="txt_desc2 ftclr_gray1">홍길동</dd>
+											<dt class="blind">작품 제작년도 :</dt>
+											<dd class="txt_desc2 ftclr_gray1">1979 제작</dd>
+											<dt class="blind">재료 :</dt>
+											<dd class="txt_desc2 ftclr_gray1 bd_none">캔버스 위 유채물감</dd>
+											<dt class="blind ge-s768">작품크기 :</dt>
+											<dd class="txt_desc2 ftclr_gray1 d_b ge-s768">80.3cm × 130.3cm, 31.61inch × 51.3inch</dd>
+											<dt class="blind">대여여부 :</dt>
+											<dd class="txt_desc2 d_b">
+												<span class="span">대여중</span>
+												<div class="btn_ud_ctrl">
+													<a href="#" class="sectit5 ftclr_point1">대여취소</a>	
+												</div>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+								<div class="info_price">
+									<span class="txt_desc1">작품가</span>
+									<span class="sectit2">
+										<span class="ftclr_point1">15,000,000</span>원
+									</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- paging -->
+					<!-- (!개발) 1~5까지 보여집니다. 
+						다섯단계 이전,이후는 5개 페이지 단위로 이동 / 한단계는 한페이지씩 이동
+					-->
+					<div class="paging">
+						<a href="#" class="btn_pg first"><i class="is_ico isi_pg_first">다섯단계 이전페이지</i></a>
+						<a href="#" class="btn_pg prev"><i class="is_ico isi_pg_prev">한단계 이전페이지</i></a>
+						<a href="#" class="num">1</a>
+						<a href="#" class="num">2</a>
+						<a href="#" class="num">3</a>
+						<a href="#" class="num active">4</a><!-- (!개발) 현재페이지 인경우 active클래스를 추가해 줍니다. -->
+						<a href="#" class="num">5</a> 
+						<a href="#" class="btn_pg next"><i class="is_ico isi_pg_next">한단계 다음페이지</i></a>
+						<a href="#" class="btn_pg end"><i class="is_ico isi_pg_end">다섯단계 이후페이지</i></a>
+					</div>
+					<!-- //paging -->
+					<!-- btn_wrap -->
+					<div class="btn_wrap topline sub_mgt5">
+						<button type="button" class="btnsM btn_sty3">
+							<span>목록</span>
+						</button>
+					</div>
+					<!-- //btn_wrap -->
+				</div>
+				<!-- 작품목록 탭 (e) -->
+			</section>
+		</section> 
+
+	</div>
+	<!-- //content 영역(e) -->
+	
+	<!-- footer영역(s) -->
+	<footer class="footer" id="footer">
+		<ul class="foot_menu">
+			<li><a href="#">센터소개</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">오류신고</a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+		<address class="foot_addr">
+			(03082) 서울시 종로구 대학로 57 (연건동) 홍익대학교 대학로 캠퍼스<br class="s320" />
+			교육동 3층, 12층 / 대표전화 : 02-708-2244<br/>
+			<span class="ftclr_default">&copy; 예술경영지원센터</span>
+		</address>
+		<div class="foot_sns">
+			<a href="#"><i class="inc_ico isi_sns1">페이스북</i></a>
+			<a href="#"><i class="inc_ico isi_sns2">블로그</i></a>
+			<a href="#"><i class="inc_ico isi_sns3">인스타그램</i></a>
+		</div>
+	</footer>
+	<!-- //footer영역(e) -->
+	<!-- 최상단 이동 버튼영역(s) -->
+	<div class="btntop">
+		<a href="#header"><span class="cscon csc_arrow3 active">상단으로</span></a>
+	</div>
+	<!-- //최상단 이동 버튼영역(e) -->
+</div>
+
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<script type="text/javascript" src="../resources/js/slider.js"></script>
+<script type="text/javascript" src="../resources/js/pop.js"></script>
+<script>
+	//calendar
+	$('.calendar_data').pignoseCalendar({
+		lang: 'ko',
+		modal: true,
+		buttons: true
+	});
+</script>
+</body>
+</html>

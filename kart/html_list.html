@@ -1,0 +1,984 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![ingif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![ingif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![ingif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![ingif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![ingif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>미술자원공유센터 웹사이트 반응형 마크업리스트</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<script type="text/javascript" src="resources/js/lib/jquery-1.11.3.min.js"></script>
+	<style>
+		*{-webkit-text-size-adjust:none;}
+		html,body{width:100%;height:100%; min-width:800px;}
+		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
+		body{line-height:1.2em; border:0;}
+		strong, em, span, wbr, a{display:inline-block;}
+		span{margin:0; padding:0; outline:0;}
+		hr{display:none}
+		ol, ul, ,dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+		fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+		address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;}
+		img{vertical-align:middle;}
+		a{cursor:pointer; text-decoration:none; color:#666;}
+		table{border-collapse:collapse;}
+		#wrap{padding:12px;}
+		#header{margin-bottom:20px;}
+		#header::after{content:''; clear:both; display:block;}
+		#header>h1{float:left; font-size:28px; color:#1a1a1a; padding-top:15px;}
+		#header>div{float:right;}
+		#header>div>p{font-size:11px; color:#888; text-align:right;}
+		div.box{border:1px solid #dedede; background:#f1f1f1; padding:12px 14px; margin-bottom:10px;}
+		h3{font-size:14px; color:#333; margin-bottom:13px;}
+		h4{font-size:14px; color:#333; margin:25px 0 8px 5px;}
+		ol.atten>li{margin-bottom:8px; padding:0; line-height:160%;}
+		ol.atten>li:last-child{margin-bottom:0;}
+		table.htmllist th,table.htmllist td{border:1px solid #ccc;}
+		table.htmllist tr:first-child td{text-align:center; font-weight:bold; border-bottom:1px solid #111 !important; height:30px; color:#000 !important; font-size:13px !important;}
+		table.htmllist th{padding:5px 6px; text-align:left; border-bottom:2px solid #4e80e8 !important; height:32px; background-color:#f3f4f8;}
+		table.htmllist th.depth2{padding: 2px 18px; text-align:left; border-bottom:1px solid #333 !important; height:30px; font-size: 12px; background-color: #fff}
+		table.htmllist td{padding:5px 6px;}
+		table.htmllist td:first-child{text-align:center;}
+		table.htmllist td:last-child{color:#888; font-size:12px;}
+		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
+		table.htmllist td:nth-child(7){color:#5183eb; font-size:11px; font-weight:bold;}
+		table.htmllist td>a{display:block; width:100%; height:26px; line-height:26px; text-align:center; color:#fff; font-size:11px; font-weight:bold; vertical-align:middle; background-color:#5183eb; border:1px solid #3f6fd3; border-radius:3px;}
+		table.htmllist td>a:hover{background-color:#3f6fd3; line-height:28px;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
+		table.htmllist td.ing{text-align:center; font-size:12;}
+		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt{padding-left:10px;margin-left:10px;border-left:1px solid #ddd;}
+		.total h3 + .tit_txt{padding-left:0;margin-left:0;border-left:none;}
+		.total_page_num{font-size:18px;color:#5183eb;}
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>미술자원공유센터 웹사이트 반응형 마크업리스트</h1>
+		<div>
+			<p>Version: <b>0.0.01</b></p>
+			<p>Last Update: <b>2017.05.29</b></p>
+			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+			<p>Guide: <b><a href="guide/guide.html" target="_blank">guide.html</a></b></p>
+		</div>
+	</div>
+	<div class="box">
+		<h3>유의사항</h3>
+		<ol class="atten">
+			<li>해당 목록은 계속 추가되거나 수정/삭제될 수 있습니다.</li>
+			<li>타겟 브라우저 : IE9+ / 구글 크롬 / 파이어폭스 / MacOS 사파리</li>
+			<li>태블릿PC 디바이스 : 안드로이드 4.1+(젤리빈) - 테스트 기종 : 삼성 갤럭시 탭S / ios 아이패드</li>
+			<li>모바일 디바이스 : 안드로이드 4.1+(젤리빈) - 테스트 기종 : 삼성 갤럭시S7, 삼성 갤럭시 A7 / ios 아이폰5 이상</li>
+			<li>4단 구성 반응형페이지(모바일/태블릿/PC/와이드PC)</li>
+			<li>Lazy Load 적용</li>
+		</ol>
+	</div>
+	<div class="box">
+		<h3>업데이트 사항</h3>
+		<ol class="atten">
+			<li>[08/01] 
+				<b>[메인]</b> 메인수정, 
+				<b>[작가 > 상세]</b> 홈페이지, 페이스북변경
+				<b>[MyPage > 작품관리 > 작품상세]</b> 대여중 표시업체
+				<b>[MyPage > 대여관리(작가) > 상세]</b> 탭추가 및 전체수정
+			</li>
+		</ol>
+	</div>
+	<div class="box total">
+		<h3>작업페이지수 : </h3>
+	</div>
+	<h4>코딩 목록</h4>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+		<thead>
+			<tr class="head">
+				<td>No</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>View</td>
+				<td>Update</td>
+				<td>Author</td>
+				<td>Remark</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="8">css</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>reset.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/reset.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>HTML속성을 초기화 시켜주는 기본css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>fonts.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/fonts.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>폰트css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>common.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/common.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>공통css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>inc.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/inc.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>인크루트관련css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>layout.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/layout.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>레이아웃css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>form.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/form.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>오민혁</td>
+				<td>폼관련css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>popup.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/popup.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>오민혁</td>
+				<td>팝업css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>main.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/main.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>메인에서만 노출되는css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>sub.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/sub.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>오민혁</td>
+				<td>서브페이지 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/resources/css/</td>
+				<td>cyber.css</td>
+				<td class="ing">ing</td>
+				<td><a href="resources/css/cyber.css" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>오민혁</td>
+				<td>사이버전시관 css</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">메인</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/</td>
+				<td>index.html</td>
+				<td class="end">end</td>
+				<td><a href="index.html" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>이유미</td>
+				<td>메인페이지</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">서비스소개</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/intro/</td>
+				<td>greeting.html</td>
+				<td class="end">end</td>
+				<td><a href="intro/greeting.html" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>오민혁</td>
+				<td>서비스 소개 > 예술경영지원센터</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/intro/</td>
+				<td>contact_us.html</td>
+				<td class="end">end</td>
+				<td><a href="intro/contact_us.html" target="_blank">View</a></td>
+				<td>17-07-28</td>
+				<td>이유미</td>
+				<td>서비스 소개 > Contact US(사업소개)</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">작품</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/work/</td>
+				<td>work_list.html</td>
+				<td class="end">end</td>
+				<td><a href="work/work_list.html" target="_blank">View</a></td>
+				<td>17-07-10</td>
+				<td>이유미</td>
+				<td>작품 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/work/</td>
+				<td>work_view.html</td>
+				<td class="end">end</td>
+				<td><a href="work/work_view.html" target="_blank">View</a></td>
+				<td>17-07-10</td>
+				<td>이유미</td>
+				<td>작품 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/work/</td>
+				<td>cyber_gallery.html</td>
+				<td class="end">end</td>
+				<td><a href="work/cyber_gallery.html" target="_blank">View</a></td>
+				<td>17-07-31</td>
+				<td>오민혁</td>
+				<td>작품 > 사이버전시관(팝업)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/work/</td>
+				<td><del>work_apply.html</del></td>
+				<td class="end">end</td>
+				<td><a href="work/work_apply.html" target="_blank">View</a></td>
+				<td>17-07-10</td>
+				<td>이유미</td>
+				<td><del>작품 > 대여신청</del></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">작가</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/author/</td>
+				<td>author_list.html</td>
+				<td class="end">end</td>
+				<td><a href="author/author_list.html" target="_blank">View</a></td>
+				<td>17-07-13</td>
+				<td>이유미</td>
+				<td>작가 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/author/</td>
+				<td>author_view.html</td>
+				<td class="end">end</td>
+				<td><a href="author/author_view.html" target="_blank">View</a></td>
+				<td>17-07-14</td>
+				<td>이유미</td>
+				<td>작가 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/author/</td>
+				<td>author_apply.html</td>
+				<td class="end">end</td>
+				<td><a href="author/author_apply.html" target="_blank">View</a></td>
+				<td>17-17-18</td>
+				<td>이유미</td>
+				<td>작가 > 작품 > 대여신청</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/author/</td>
+				<td>pop_rent_app.html</td>
+				<td class="end">end</td>
+				<td><a href="author/pop_rent_app.html" target="_blank">View</a></td>
+				<td>17-07-14</td>
+				<td>이유미</td>
+				<td>작가 > 상세 [popup_대여신청버튼]</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">대여업체</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/rental/</td>
+				<td>rental_list.html</td>
+				<td class="end">end</td>
+				<td><a href="rental/rental_list.html" target="_blank">View</a></td>
+				<td>17-07-12</td>
+				<td>이유미</td>
+				<td>대여업체 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/rental/</td>
+				<td>rental_view.html</td>
+				<td class="end">end</td>
+				<td><a href="rental/rental_view.html" target="_blank">View</a></td>
+				<td>17-07-13</td>
+				<td>이유미</td>
+				<td>대여업체 > 상세</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">화랑</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/art/</td>
+				<td>art_list.html</td>
+				<td class="end">end</td>
+				<td><a href="art/art_list.html" target="_blank">View</a></td>
+				<td>2017-07-13</td>
+				<td>이유미</td>
+				<td>화랑 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/art/</td>
+				<td>art_view.html</td>
+				<td class="end">end</td>
+				<td><a href="art/art_view.html" target="_blank">View</a></td>
+				<td>2017-07-13</td>
+				<td>이유미</td>
+				<td>화랑 > 상세</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">알림마당</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/notice/</td> 
+				<td>notice_list.html</td>
+				<td class="end">end</td>
+				<td><a href="notice/notice_list.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>알림마당 > 공지사항 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/notice/</td> 
+				<td>notice_view.html</td>
+				<td class="end">end</td>
+				<td><a href="notice/notice_view.html" target="_blank">View</a></td>
+				<td>17-07-28</td>
+				<td>이유미</td>
+				<td>알림마당 > 공지사항 > 상세보기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/notice/</td> 
+				<td>news_list.html</td>
+				<td class="end">end</td>
+				<td><a href="notice/news_list.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>알림마당 > 뉴스/홍보 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/notice/</td> 
+				<td>news_view.html</td>
+				<td class="end">end</td>
+				<td><a href="notice/news_view.html" target="_blank">View</a></td>
+				<td>17-07-28</td>
+				<td>이유미</td>
+				<td>알림마당 > 뉴스/홍보 > 상세보기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/notice/</td> 
+				<td>data_list.html</td>
+				<td class="end">end</td>
+				<td><a href="notice/data_list.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>알림마당 > 자료실 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/notice/</td> 
+				<td>data_view.html</td>
+				<td class="end">end</td>
+				<td><a href="notice/data_view.html" target="_blank">View</a></td>
+				<td>17-07-28</td>
+				<td>이유미</td>
+				<td>알림마당 > 자료실 > 상세보기</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">로그인 / 회원가입</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>login.html</td>
+				<td class="end">end</td>
+				<td><a href="member/login.html" target="_blank">View</a></td>
+				<td>17-06-14</td>
+				<td>오민혁</td>
+				<td>로그인</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>login_account_guide.html</td>
+				<td class="end">end</td>
+				<td><a href="member/login_account_guide.html" target="_blank">View</a></td>
+				<td>17-07-12</td>
+				<td>이유미</td>
+				<td>로그인 > 휴면계정 안내</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join.html" target="_blank">View</a></td>
+				<td>17-06-20</td>
+				<td>이유미</td>
+				<td>회원가입</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_step1.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_step1.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 개인 > step1.약관동의</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_step2.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_step2.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 개인 > step2.본인인증</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_step3.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_step3.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 개인 > step3.회원정보 입력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_step4.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_step4.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 개인 > step4.가입완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_author_step1.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_author_step1.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 작가 > step1.약관동의</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_author_step2.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_author_step2.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 작가 > step2.본인인증</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_author_step3.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_author_step3.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 작가 > step3.회원정보 입력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join_author_step4.html</td>
+				<td class="end">end</td>
+				<td><a href="member/join_author_step4.html" target="_blank">View</a></td>
+				<td>17-06-23</td>
+				<td>이유미</td>
+				<td>회원가입 > 작가 > step4.가입완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find_id.html</td>
+				<td class="end">end</td>
+				<td><a href="member/find_id.html" target="_blank">View</a></td>
+				<td>17-06-19</td>
+				<td>이유미</td>
+				<td>아이디찾기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find_id_complete.html</td>
+				<td class="end">end</td>
+				<td><a href="member/find_id_complete.html" target="_blank">View</a></td>
+				<td>17-06-19</td>
+				<td>이유미</td>
+				<td>아이디찾기 > 결과</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find_pw.html</td>
+				<td class="end">end</td>
+				<td><a href="member/find_pw.html" target="_blank">View</a></td>
+				<td>17-06-19</td>
+				<td>이유미</td>
+				<td>비밀번호 재발급</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>find_pw_complete.html</td>
+				<td class="end">end</td>
+				<td><a href="member/find_pw_complete.html" target="_blank">View</a></td>
+				<td>17-06-19</td>
+				<td>이유미</td>
+				<td>비밀번호 재발급 > 결과</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">고객센터</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/customer/</td>
+				<td>error_modify_list.html</td>
+				<td class="end">end</td>
+				<td><a href="customer/error_modify_list.html" target="_blank">View</a></td>
+				<td>17-06-27</td>
+				<td>이유미</td>
+				<td>오류정정신고센터 > 리스트, 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/customer/</td>
+				<td>error_modify_write.html</td>
+				<td class="end">end</td>
+				<td><a href="customer/error_modify_write.html" target="_blank">View</a></td>
+				<td>17-06-27</td>
+				<td>이유미</td>
+				<td>오류정정신고센터 > 글쓰기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/customer/</td>
+				<td>qna_list.html</td>
+				<td class="end">end</td>
+				<td><a href="customer/qna_list.html" target="_blank">View</a></td>
+				<td>17-06-27</td>
+				<td>이유미</td>
+				<td>1:1문의 > 리스트,상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/customer/</td>
+				<td>qna_write.html</td>
+				<td class="end">end</td>
+				<td><a href="customer/qna_write.html" target="_blank">View</a></td>
+				<td>17-06-27</td>
+				<td>이유미</td>
+				<td>1:1문의 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/customer/</td>
+				<td>agree_tab1.html</td>
+				<td class="end">end</td>
+				<td><a href="customer/agree_tab1.html" target="_blank">View</a></td>
+				<td>17-06-29</td>
+				<td>오민혁</td>
+				<td>이용약관 > 이용약관</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/customer/</td>
+				<td>agree_tab2.html</td>
+				<td class="end">end</td>
+				<td><a href="customer/agree_tab2.html" target="_blank">View</a></td>
+				<td>17-06-29</td>
+				<td>오민혁</td>
+				<td>이용약관 > 개인정보처리방침</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">마이페이지</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>myscrap_list.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/myscrap_list.html" target="_blank">View</a></td>
+				<td>17-07-19</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 마이스크랩 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>userinfo_write_author_tab1.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/userinfo_write_author_tab1.html" target="_blank">View</a></td>
+				<td>17-07-20</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 회원정보 > 작가 > tab1. 필수정보</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>userinfo_write_author_tab2.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/userinfo_write_author_tab2.html" target="_blank">View</a></td>
+				<td>17-07-20</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 회원정보 > 작가 > tab2. 선택정보</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>userinfo_write_author_tab3.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/userinfo_write_author_tab3.html" target="_blank">View</a></td>
+				<td>17-07-20</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 회원정보 > 작가 > tab3. 이력소개</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>userinfo_write.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/userinfo_write.html" target="_blank">View</a></td>
+				<td>17-07-20</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 회원정보 > 업체</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>userinfo_out.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/userinfo_out.html" target="_blank">View</a></td>
+				<td>17-07-21</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 회원정보 > 작가 > 회원탈퇴</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>inquiry_list.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/inquiry_list.html" target="_blank">View</a></td>
+				<td>17-07-21</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 1:1문의 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>inquiry_write.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/inquiry_write.html" target="_blank">View</a></td>
+				<td>17-07-21</td>
+				<td>이유미</td>
+				<td>MyPage(공통) > 1:1문의 > 글쓰기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>art_manage_list.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/art_manage_list.html" target="_blank">View</a></td>
+				<td>17-07-21</td>
+				<td>이유미</td>
+				<td>MyPage > 작품관리 > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>art_manage_view.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/art_manage_view.html" target="_blank">View</a></td>
+				<td>17-07-21</td>
+				<td>이유미</td>
+				<td>MyPage > 작품관리 > 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>art_manage_write.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/art_manage_write.html" target="_blank">View</a></td>
+				<td>17-07-25</td>
+				<td>이유미</td>
+				<td>MyPage > 작품관리 > 신규/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>rentadmin_author_list.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/rentadmin_author_list.html" target="_blank">View</a></td>
+				<td>17-07-25</td>
+				<td>이유미</td>
+				<td>MyPage > 대여관리(작가) > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>rentadmin_author_view_tab1.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/rentadmin_author_view_tab1.html" target="_blank">View</a></td>
+				<td>17-08-01</td>
+				<td>이유미</td>
+				<td>MyPage > 대여관리(작가) > 상세 > Tab1.권한계약이력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>rentadmin_author_view_tab2.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/rentadmin_author_view_tab2.html" target="_blank">View</a></td>
+				<td>17-08-01</td>
+				<td>이유미</td>
+				<td>MyPage > 대여관리(작가) > 상세 > Tab2.작품목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>rentadmin_author_view_tab3.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/rentadmin_author_view_tab3.html" target="_blank">View</a></td>
+				<td>17-08-01</td>
+				<td>이유미</td>
+				<td>MyPage > 대여관리(작가) > 상세 > Tab3.매출이력</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>rentadmin_list.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/rentadmin_list.html" target="_blank">View</a></td>
+				<td>17-07-25</td>
+				<td>이유미</td>
+				<td>MyPage > 대여관리(업체) > 목록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>rentadmin_view.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/rentadmin_view.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>MyPage > 대여관리(업체) > 상세 > Tab1,2,3</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>display_admin_list.html</td>
+				<td class="end">end</td>
+				<td><a href="mypage/display_admin_list.html" target="_blank">View</a></td>
+				<td>17-07-26</td>
+				<td>이유미</td>
+				<td>MyPage > 전시/전속관리 > 목록</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">검색</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/search/</td> 
+				<td>search_tab1.html</td>
+				<td class="end">end</td>
+				<td><a href="search/search_tab1.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>검색 > tab1. 전체</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/search/</td> 
+				<td>search_tab2.html</td>
+				<td class="end">end</td>
+				<td><a href="search/search_tab2.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>검색 > tab2. 작품</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/search/</td> 
+				<td>search_tab3.html</td>
+				<td class="end">end</td>
+				<td><a href="search/search_tab3.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>검색 > tab3. 작가</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/search/</td> 
+				<td>search_tab4.html</td>
+				<td class="end">end</td>
+				<td><a href="search/search_tab4.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>검색 > tab4. 업체</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/search/</td> 
+				<td>search_tab5.html</td>
+				<td class="end">end</td>
+				<td><a href="search/search_tab5.html" target="_blank">View</a></td>
+				<td>17-07-27</td>
+				<td>이유미</td>
+				<td>검색 > tab5. 게시글</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">메일링</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mailing/</td>
+				<td>mail_pw_guide.html</td>
+				<td class="end">end</td>
+				<td><a href="mailing/mail_pw_guide.html" target="_blank">View</a></td>
+				<td>17-06-08</td>
+				<td>이유미</td>
+				<td>로그인 > 비밀번호 재발급 > 안내메일</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mailing/</td>
+				<td>mail_account_guide.html</td>
+				<td class="end">end</td>
+				<td><a href="mailing/mail_account_guide.html" target="_blank">View</a></td>
+				<td>17-07-12</td>
+				<td>이유미</td>
+				<td>로그인 > 휴면계정 > 안내메일</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mailing/</td>
+				<td>mail_display_exc.html</td>
+				<td class="end">end</td>
+				<td><a href="mailing/mail_display_exc.html" target="_blank">View</a></td>
+				<td>17-07-12</td>
+				<td>이유미</td>
+				<td>작가 > 전시전속 > 개인정보공개승인</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mailing/</td>
+				<td>mail_display_exc2.html</td>
+				<td class="end">end</td>
+				<td><a href="mailing/mail_display_exc2.html" target="_blank">View</a></td>
+				<td>17-07-18</td>
+				<td>이유미</td>
+				<td>마이페이지 > 전시전속 > 개인정보공개승인</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	var totalPageNum = 0;
+	$('tbody').each(function(idx){	
+		var titTxt = $('tbody').eq(idx).find('th').text();
+		$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')	
+		$(this).find('tr').each(function(i){
+			$(this).find('td:first-child').text(i);
+			num = $(this).filter(':last-child').find('td:first-child').text();
+		});
+		$('.total').append('<strong>' + num + '</strong>');
+		totalPageNum += parseInt(num);
+	});
+	$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+</script>
+</body>
+</html>

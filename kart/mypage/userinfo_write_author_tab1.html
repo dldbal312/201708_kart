@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>작가 &lt; 회원정보 &lt; 마이페이지 &lt; 미술자원공유센터</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="문화체육관광부 미술자원공유센터,문화체육관광부,미술자원공유센터">
+	<meta name="description" content="문화체육관광부 미술자원공유센터">
+	<meta name="author" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:description" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:image" content="#">
+	<meta property="og:url" content="#">
+	<meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
+	<!-- Favicon -->
+	<link rel="SHORTCUT ICON" href="../resources/images/common/favicon.ico">
+	<link rel="apple-touch-icon" href="../resources/images/common/bookmark.png"><!-- 애플 아이콘 -->
+	<link rel="apple-touch-icon-precomposed" href="../resources/images/common/bookmark.png"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/inc.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/form.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/sub.css"><!-- 서브페이지에서만 호출 -->
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+	<![endif]-->
+	<!-- Javascript -->
+	<script type="text/javascript" src="../resources/js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/modernizr.custom.31356.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../resources/js/lib/html5.js"></script>
+		<script type="text/javascript" src="../resources/js/lib/respond.min.js"></script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['NanumSquare','Noto Sans KR']
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.placeholders.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.lazyload.min.js"></script>
+	<!-- plugins -->
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/ui-select/select2.css">
+	<script type="text/javascript" src="../resources/plugins/ui-select/jquery.ui-selectBox.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.theme.default.css">
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel.js"></script>
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel2.thumbs.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 달력 plugin -->
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/moment.latest.min.js"></script>
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/pignose.calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/pignose-calendar/pignose.calendar.css">
+</head>
+<body>
+<!-- 스킵 네비게이션(s) -->
+<div id="skipNavigation">
+	<ul>
+		<li>
+			<a href="#contents">본문 바로가기</a>
+		</li>
+		<li>
+			<a href="#headerGnb">전체메뉴 바로가기</a>
+		</li>
+		<li>
+			<a href="#footer">하단 바로가기</a>
+		</li>
+	</ul>
+</div>
+<!--// 스킵 네비게이션(e) -->
+
+<div id="wrap">
+	<!-- header영역(s) -->
+	<header class="header sub_header" id="header">
+		<div class="inner">
+			<h1 class="head_logo">
+				<a href="/" class="inc_ico ico_logo">ART-SHARING 미술자원공유서비스</a>
+			</h1>
+			<div class="clr">
+				<div class="head_user">
+					<a href="#">로그인</a>
+					<a href="#">회원가입</a>
+				</div>
+				<button type="button" class="btn_search" id="headSerachOpen" title="검색"><span class="inc_ico ico_search">검색</span></button>
+				<!-- 검색버튼 클릭시 나오는 영역 -->
+				<div class="hdsearch_area trns">
+					<form>
+						<fieldset>
+							<legend>미술자원공유서비스 검색영역</legend>
+							<div class="hd_search">
+								<label for="searchTxt" class="blind">검색어 입력</label>
+								<input type="text" name="searchTxt" id="searchTxt" class="inp" placeholder="검색어를 입력하세요">
+								<!-- (개발요소)검색어에 텍스트 입력시 삭제버튼 노출됩니다. -->
+								<div class="btn_wrap">
+									<div class="clr">
+										<button type="button" title="검색어 삭제"><span class="inc_ico ico_del">검색어 삭제</span></button>
+									</div>
+									<div class="clr">
+										<button type="button" title="검색"><span class="inc_ico ico_search2">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn_close"><span class="is_ico isi_close">닫기</span></a>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //검색버튼 클릭시 나오는 영역 -->
+
+				<!-- pc에서만 나오는 메뉴 -->
+				<!-- (개발요소) 해당 페이지일 경우 li에 on클래스 넣어줍니다. -->
+				<div class="head_menu" id="head_menu">
+					<ul class="nav_menu">
+						<li><a href="#">작품</a></li>
+						<li><a href="#">작가</a></li>
+						<li><a href="#">대여업체</a></li>
+						<li><a href="#">화랑</a></li>
+						<li>
+							<a href="#">알림마당</a>
+							<ul class="depth2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">뉴스/홍보</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">서비스 소개</a>
+							<ul class="depth2">
+								<li><a href="#">예술경영센터</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //pc에서만 나오는 메뉴 -->
+
+				<button type="button" id="headerGnb" class="btnh_gnb" title="전체메뉴"><span class="trns"><i>전체메뉴</i></span></button>
+				<!-- 전체메뉴 클릭시 나오는 메뉴 -->
+				<nav class="nav trns" id="nav">
+					<div class="user_menu">
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+					</div>
+					<div class="nav_menu_wrap">
+						<ul class="nav_menu">
+							<li><a href="#">작품</a></li>
+							<li><a href="#">작가</a></li>
+							<li><a href="#">대여업체</a></li>
+							<li><a href="#">화랑</a></li>
+							<li>
+								<a href="#">알림마당</a>
+								<ul class="depth2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">뉴스/홍보</a></li>
+									<li><a href="#">자료실</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">서비스 소개</a>
+								<ul class="depth2">
+									<li><a href="#">예술경영센터</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn_close"><span class="is_ico isi_close2">닫기</span></a>
+				</nav>
+				<!-- //전체메뉴 클릭시 나오는 메뉴 -->
+			</div>		
+		</div>	
+	</header>
+	<!-- //header영역(e) -->
+
+	<!-- 서브메뉴 영역(s) -->
+	<div id="leftMenu" class="lnb_wrap">
+		<nav class="lnb_nav">
+			<h2 class="blind">마이페이지</h2>
+			<h3 class="now_menu">회원정보</h3>
+			<!-- (개발요소) 해당 페이지일 경우 li에 class="active"를 넣어 줍니다. -->
+			<ul class="lnb_menu">
+				<li>
+					<a href="../mypage/myscrap_list.html"><span>마이스크랩</span></a>
+				</li>
+				<li class="active">
+					<a href="../mypage/userinfo_write.html"><span>회원정보</span></a>
+				</li>
+				<li>
+					<a href="../mypage/inquiry_list.html"><span>1:1문의</span></a>
+				</li>
+				<li>
+					<a href="../mypage/art_manage_list.html"><span>작품관리</span></a>
+				</li>
+				<li>
+					<a href="../mypage/rentadmin_author_list.html"><span>대여관리</span></a>
+				</li>
+				<li>
+					<a href="../mypage/display_admin_list.html"><span>전시/전속관리</span></a>
+				</li>
+			</ul>
+			<span class="state_arr">서브메뉴 전체보기</span>
+		</nav>
+	</div>
+	<!--// 서브메뉴 영역(e) -->
+	
+	<!-- content 영역(s) -->
+	<div id="contents" class="sub_wrap">
+		<section class="sub_contents">
+			<form>
+				<fieldset>
+					<legend>회원정보</legend>
+					<div class="section1 sub_mgt7">
+						<!-- tab(s) -->
+						<ul class="link_tab_style1 dex3">
+							<li class="active"><a href="userinfo_write_author_tab1.html" role="button"><span>필수 정보</span></a></li>
+							<li><a href="userinfo_write_author_tab2.html" role="button"><span>선택 정보</span></a></li>
+							<li><a href="userinfo_write_author_tab3.html" role="button"><span>이력·소개</span></a></li>
+						</ul>
+						<!-- tab(e) -->
+
+						<div class="bbs_box sub_mgt7">
+							<h4 class="blind">필수 정보</h4>
+							<dl class="bbs_write">
+								<dt class="sectit3">
+									<span class="tit">아이디 <strong class="txt_ess ftclr_point1">* 필수입력</strong></span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">comp_1234</dd>
+								<dt class="sectit3">
+									<span class="tit">비밀번호 <strong class="txt_ess ftclr_point1">* 필수입력</strong></span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="btn_wrap mgt0">
+										<div class="cl">
+											<button type="button" class="btnsS btn_sty1">
+												<span>비밀번호변경</span>
+											</button>
+										</div>
+									</div>
+								</dd>
+								<!-- (개발) 비밀번호변경 버튼 누르면 나오는 영역 -->
+								<dt class="sectit3">
+									<label class="tit" for="userPw">
+										기존 비밀번호 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">비밀번호는 영문, 숫자 조합 8~12자리로 입력하시기 바랍니다.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="userPw" name="userPw" placeholder="기존 비밀번호 입력" class="size_full" />
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="userModifyPw">
+										변경할 비밀번호 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">비밀번호는 영문, 숫자 조합 8~12자리로 입력하시기 바랍니다.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="userModifyPw" name="userModifyPw" placeholder="변경할 비밀번호 입력 " class="size_full" />
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="userPwConfirm">
+										비밀번호 확인 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">비밀번호는 영문, 숫자 조합 8~12자리로 입력하시기 바랍니다.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="userPwConfirm" name="userPwConfirm" placeholder="변경할 비밀번호를 다시한번 입력" class="size_full" />
+									</div>
+								</dd>
+								<!-- //(개발) 비밀번호변경 버튼 누르면 나오는 영역 -->
+								<dt class="sectit3">
+									<span class="tit">성명(한글) <strong class="txt_ess ftclr_point1">* 필수입력</strong></span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">홍길동</dd>
+								<dt class="sectit3">
+									<span class="tit">성별 <strong class="txt_ess ftclr_point1">* 필수입력</strong></span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">남성</dd>
+								<dt class="sectit3">
+									<span class="tit">생년월일 <strong class="txt_ess ftclr_point1">* 필수입력</strong></span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">1928.11.26</dd>
+								<dt class="sectit3">
+									<span class="tit">국적 <strong class="txt_ess ftclr_point1">* 필수입력</strong></span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">대한민국</dd>
+							</dl>
+						</div>
+						<div class="btn_wrap">
+							<div class="clc">
+								<button type="button" class="btnsM btn_sty3">
+									<span>저장하기</span>
+								</button>
+							</div>
+							<div class="clc">
+								<button type="button" class="btnsM btn_sty1">
+									<span>취소하기</span>
+								</button>
+							</div>
+							<div class="clc">
+								<button type="button" class="btnsM btn_sty2">
+									<span>회원탈퇴</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+
+	</div>
+	<!-- //content 영역(e) -->
+	
+	<!-- footer영역(s) -->
+	<footer class="footer" id="footer">
+		<ul class="foot_menu">
+			<li><a href="#">센터소개</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">오류신고</a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+		<address class="foot_addr">
+			(03082) 서울시 종로구 대학로 57 (연건동) 홍익대학교 대학로 캠퍼스<br class="s320" />
+			교육동 3층, 12층 / 대표전화 : 02-708-2244<br/>
+			<span class="ftclr_default">&copy; 예술경영지원센터</span>
+		</address>
+		<div class="foot_sns">
+			<a href="#"><i class="inc_ico isi_sns1">페이스북</i></a>
+			<a href="#"><i class="inc_ico isi_sns2">블로그</i></a>
+			<a href="#"><i class="inc_ico isi_sns3">인스타그램</i></a>
+		</div>
+	</footer>
+	<!-- //footer영역(e) -->
+	<!-- 최상단 이동 버튼영역(s) -->
+	<div class="btntop">
+		<a href="#header"><span class="cscon csc_arrow3 active">상단으로</span></a>
+	</div>
+	<!-- //최상단 이동 버튼영역(e) -->
+</div>
+
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<script type="text/javascript" src="../resources/js/slider.js"></script>
+<script type="text/javascript" src="../resources/js/pop.js"></script>
+</body>
+</html>

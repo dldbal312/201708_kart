@@ -1,0 +1,631 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>작가 상세보기 &lt; 미술자원공유센터</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="문화체육관광부 미술자원공유센터,문화체육관광부,미술자원공유센터">
+	<meta name="description" content="문화체육관광부 미술자원공유센터">
+	<meta name="author" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:description" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:image" content="#">
+	<meta property="og:url" content="#">
+	<meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
+	<!-- Favicon -->
+	<link rel="SHORTCUT ICON" href="../resources/images/common/favicon.ico">
+	<link rel="apple-touch-icon" href="../resources/images/common/bookmark.png"><!-- 애플 아이콘 -->
+	<link rel="apple-touch-icon-precomposed" href="../resources/images/common/bookmark.png"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/inc.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/form.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/sub.css"><!-- 서브페이지에서만 호출 -->
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+	<![endif]-->
+	<!-- Javascript -->
+	<script type="text/javascript" src="../resources/js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/modernizr.custom.31356.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../resources/js/lib/html5.js"></script>
+		<script type="text/javascript" src="../resources/js/lib/respond.min.js"></script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['NanumSquare','Noto Sans KR']
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.placeholders.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.lazyload.min.js"></script>
+	<!-- plugins -->
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/ui-select/select2.css">
+	<script type="text/javascript" src="../resources/plugins/ui-select/jquery.ui-selectBox.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.theme.default.css">
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel.js"></script>
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel2.thumbs.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 달력 plugin -->
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/moment.latest.min.js"></script>
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/pignose.calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/pignose-calendar/pignose.calendar.css">
+</head>
+<body>
+<!-- 스킵 네비게이션(s) -->
+<div id="skipNavigation">
+	<ul>
+		<li>
+			<a href="#contents">본문 바로가기</a>
+		</li>
+		<li>
+			<a href="#headerGnb">전체메뉴 바로가기</a>
+		</li>
+		<li>
+			<a href="#footer">하단 바로가기</a>
+		</li>
+	</ul>
+</div>
+<!--// 스킵 네비게이션(e) -->
+
+<div id="wrap">
+	<!-- header영역(s) -->
+	<header class="header sub_header" id="header">
+		<div class="inner">
+			<h1 class="head_logo">
+				<a href="/" class="inc_ico ico_logo">ART-SHARING 미술자원공유서비스</a>
+			</h1>
+			<div class="clr">
+				<div class="head_user">
+					<a href="#">로그인</a>
+					<a href="#">회원가입</a>
+				</div>
+				<button type="button" class="btn_search" id="headSerachOpen" title="검색"><span class="inc_ico ico_search">검색</span></button>
+				<!-- 검색버튼 클릭시 나오는 영역 -->
+				<div class="hdsearch_area trns">
+					<form>
+						<fieldset>
+							<legend>미술자원공유서비스 검색영역</legend>
+							<div class="hd_search">
+								<label for="searchTxt" class="blind">검색어 입력</label>
+								<input type="text" name="searchTxt" id="searchTxt" class="inp" placeholder="검색어를 입력하세요">
+								<!-- (개발요소)검색어에 텍스트 입력시 삭제버튼 노출됩니다. -->
+								<div class="btn_wrap">
+									<div class="clr">
+										<button type="button" title="검색어 삭제"><span class="inc_ico ico_del">검색어 삭제</span></button>
+									</div>
+									<div class="clr">
+										<button type="button" title="검색"><span class="inc_ico ico_search2">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn_close"><span class="is_ico isi_close">닫기</span></a>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //검색버튼 클릭시 나오는 영역 -->
+
+				<!-- pc에서만 나오는 메뉴 -->
+				<!-- (개발요소) 해당 페이지일 경우 li에 on클래스 넣어줍니다. -->
+				<div class="head_menu" id="head_menu">
+					<ul class="nav_menu">
+						<li><a href="#">작품</a></li>
+						<li><a href="#">작가</a></li>
+						<li><a href="#">대여업체</a></li>
+						<li><a href="#">화랑</a></li>
+						<li>
+							<a href="#">알림마당</a>
+							<ul class="depth2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">뉴스/홍보</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">서비스 소개</a>
+							<ul class="depth2">
+								<li><a href="#">예술경영센터</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //pc에서만 나오는 메뉴 -->
+
+				<button type="button" id="headerGnb" class="btnh_gnb" title="전체메뉴"><span class="trns"><i>전체메뉴</i></span></button>
+				<!-- 전체메뉴 클릭시 나오는 메뉴 -->
+				<nav class="nav trns" id="nav">
+					<div class="user_menu">
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+					</div>
+					<div class="nav_menu_wrap">
+						<ul class="nav_menu">
+							<li><a href="#">작품</a></li>
+							<li><a href="#">작가</a></li>
+							<li><a href="#">대여업체</a></li>
+							<li><a href="#">화랑</a></li>
+							<li>
+								<a href="#">알림마당</a>
+								<ul class="depth2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">뉴스/홍보</a></li>
+									<li><a href="#">자료실</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">서비스 소개</a>
+								<ul class="depth2">
+									<li><a href="#">예술경영센터</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn_close"><span class="is_ico isi_close2">닫기</span></a>
+				</nav>
+				<!-- //전체메뉴 클릭시 나오는 메뉴 -->
+			</div>		
+		</div>	
+	</header>
+	<!-- //header영역(e) -->
+
+	<!-- 서브메뉴 영역(s) -->
+	<div id="leftMenu" class="lnb_wrap">
+		<nav class="lnb_nav">
+			<h2 class="blind">작가</h2>
+			<h3 class="now_menu">작가</h3>
+			<!-- (개발요소) 해당 페이지일 경우 li에 class="active"를 넣어 줍니다. -->
+			<ul class="lnb_menu">
+				<li class="active">
+					<a href="../author/author_list.html"><span>작가</span></a>
+				</li>
+			</ul>
+			<span class="state_arr">서브메뉴 전체보기</span>
+		</nav>
+	</div>
+	<!--// 서브메뉴 영역(e) -->
+	
+	<!-- content 영역(s) -->
+	<div id="contents" class="sub_wrap">
+		
+		<section class="view_detail">
+			<!-- title,imgView -->
+			<div class="sub_contents section1">
+				<div class="tit_detail_view">
+					<h4 class="sectit1">홍길동<br />
+						<span class="sectit2 ftclr_gray1">Hong Gil-dong</span>
+					</h4>
+					<dl class="txt_desc1 ftclr_gray1">
+						<dt class="blind">설립연도 :</dt>
+						<dd>(2007~)</dd>
+					</dl>
+					<div class="pos_wrap">
+						<a href="#" class="sectit4 sns1" target="_blank" title="새창열림"><i class="is_ico isi_facebook">페이스북으로 이동</i></a>
+						<a href="#" class="sectit4 sns2">URL <span class="blind">링크복사</span></a>
+					</div>
+				</div>
+				<div class="detail_img_view">
+					<img src="../resources/images/temp/img_author_view_gal.jpg" alt="작가 프로필 사진" class="imgexpend img_size1" />
+				</div>
+			</div>
+			<!-- //title,imgView -->
+
+			<!-- description -->
+			<div class="view_description bgclr_gray1">
+				<div class="sub_contents section1">
+					<h5 class="blind">작가 기본정보</h5>
+					<div class="split layout_frame">	
+						<div class="cl">
+							<table class="view_basic_info txt_desc1">
+								<caption>작가 기본정보</caption>
+								<colgroup>
+									<col class="col1">
+									<col>
+								</colgroup>	
+								<tbody>	
+									<tr>
+										<th scope="row">대여계약</th>
+										<td class="ftclr_gray1">OOO갤러리, OOO아트센터, OOO화랑, OOO미술협회 서울지부</td>
+									</tr>
+									<tr>
+										<th scope="row">홈페이지</th>
+										<td class="ftclr_gray1">
+											<a href="http://www.gokams.or.kr" class="ftclr_gray1" target="_blank" title="새창열림">http://www.gokams.or.kr</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">페이스북</th>
+										<td class="ftclr_gray1">
+											<a href="https://www.facebook.com/gokams" class="ftclr_gray1" target="_blank" title="새창열림">https://www.facebook.com/gokams</a>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+							<div class="view_tag_area">
+								<span class="blind">해시태그:</span>
+								<a href="#" class="tag">#홍길동</a>
+								<a href="#" class="tag">#서양화</a>
+								<a href="#" class="tag">#서예</a>
+								<a href="#" class="tag">#예술경영지원센터</a>
+								<a href="#" class="tag">#A갤러리</a>
+							</div>
+						</div>
+						<div class="clr va_b">
+							<div class="btn_wrap">
+								<!-- (!개발) 기업 회원에게만 노출 -->
+								<div class="clr">
+									<button type="button" class="btnsM btn_sty3"><span>대여신청</span></button>
+								</div>
+								<!-- //(!개발) 기업 회원에게만 노출 -->
+								<div class="clr">
+									<button type="button" class="btnsM btn_sty3"><span>전속/전시신청</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //description -->
+			
+			<div class="sub_contents sub_mgt7">
+				<!-- tab(s) -->
+				<ul class="link_tab_style1 dex3" id="fixTab">
+					<li class="active"><a href="#" role="button"><span>작가소개</span></a></li>
+					<li><a href="#" role="button"><span>작가이력</span></a></li>
+					<li><a href="#" role="button"><span>포트폴리오</span></a></li>
+				</ul>
+				<!-- tab(e) -->
+
+				<!-- tabview_wrap > tabview가 있는경우 탭스크립트가 실행됩니다. -->
+				<div class="tabview_wrap">
+					<!-- 작가소개 : 탭 내용 영역 (s) -->
+					<div class="sub_mgt7 section1 tabview">
+						<!-- 작품소개 -->
+						<div class=" viwe_info_desc">
+							<p class="txt_desc1 ftclr_gray1">
+								대구는 이우환, 박서보, 정상화, 이동엽, 정창섭, 윤형근, 이강소, 김창렬 등과 같은 단색화 작가들이 활발하게 활동한 한국 현대미술의 발상지이지만, 90년대 이후 침체기를 맞았다. 현재는 많은 활기를 되찾았는데, 그 뒤에는 리안갤러리의 많은 노고가 있었다. 2000년대 당시 지방에서는 쉽게 접할 수 없었던 해외 유명 작가들의 전시를 대구에서 선보이며 지역민들 또한 서울 못지 않은 다채로운 해외 현대미술을 접할 수 있는 기회를 제공하였고, 대구와 지역 작가들을 리안갤러리 서울과 해외 아트패어를 통해 적극적으로 소개함으로써 지역 글로벌화를 위해 꾸준히 노력해왔다.
+								<br /><br />
+								A갤러리는 류현욱(2008, 2013), 이명미(2009, 2015), 남춘모(2015), 박종규(2016), 김호득(2011), 이이남(2013), 권부문(2012)과 같은 국내 작가들의 개인전을 매년 세 차례 이상 지속적으로 개최해왔고, 그 결과 홍콩(ABHK 2014, 2015, 2016), 싱가포르(Art Stage Singapore 2013), 베이징(China International Gallery Exposition 2009) 등에서 열리는 국제 아트페어 및 각종 국내 아트페어와 두바이, 러시아, 미국, 싱가포르의 미술관에서 국내 작가들의 작품을 소개할 수 있는 기회를 얻어왔다.
+								<br /><br />
+								동시에, 앤디 워홀(2007), 알렉스 카츠(2007), 베르나르 브네(2007), 백남준(2008), 야오이 쿠사마(2008), A.R. 펭크(2008), 데미안 허스트(2009), 미스터(2010), 제니퍼 스타인캠프(2010, 2014), 패트리샤 피치니니(2010), 우밍중(2011), 데이비드 살리(2013), 디자인(2014), 이브 수스만(2014), 이미 크뇌벨(2015), 프랭크 스텔라(2015) 등 해외 주요 작가들의 개인전 역시 작가 및 그들이 속한 전속 화랑과의 직접적인 연계를 통해 개최해왔고, 장래성 있는 작가 발굴 및 지속적인 작품 제작 후원, 국제 무대 진출을 위한 통로 구축에도 많은 노력을 기울여왔다.
+							</p>
+						</div>
+						<!-- //작품소개 -->
+
+						<!-- 작품영상 -->
+						<div class="sub_mgt1 viwe_movie">
+							<img src="../resources/images/sub/img_work_movie.jpg" alt="작품영상" class="imgexpend">
+						</div>
+						<!-- //작품영상 -->
+
+						<!-- 작가의 다른 작품 -->
+						<div class="sub_mgt3 view_etc_work topline">
+							<h5 class="tit_area">
+								<a href="#" class="clc sectit2">작가의 다른 작품 <span class="is_ico isi_more">검색/더보기</span></a>
+							</h5>
+							<ul class="gallery_list col5">
+								<li>
+									<figure class="item_list">
+										<div class="item">
+											<div class="cate_wrap">
+												<span class="category bgopc_cate1">대여중</span>
+											</div>
+											<a href="../author/author_list.html" class="item_img next_over">
+												<img src="../resources/images/temp/temp_work_view1.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+											</a>
+											<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+											<div class="over trns split">
+												<div class="clc">
+													<a href="../author/author_list.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												</div>
+											</div>
+											<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										</div>
+										<figcaption class="info">
+											<span class="sectit3">바람에게서 듣다</span>
+										</figcaption>
+									</figure>
+								</li>
+								<li>
+									<figure class="item_list">
+										<div class="item">
+											<a href="../author/author_list.html" class="item_img next_over">
+												<img src="../resources/images/temp/temp_work_view2.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+											</a>
+											<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+											<div class="over trns split">
+												<div class="clc">
+													<a href="../author/author_list.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												</div>
+											</div>
+											<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										</div>
+										<figcaption class="info">
+											<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+										</figcaption>
+									</figure>
+								</li>
+								<li>
+									<figure class="item_list">
+										<div class="item">
+											<a href="../author/author_list.html" class="item_img next_over">
+												<img src="../resources/images/temp/temp_work_view3.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+											</a>
+											<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+											<div class="over trns split">
+												<div class="clc">
+													<a href="../author/author_list.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												</div>
+											</div>
+											<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										</div>
+										<figcaption class="info">
+											<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+										</figcaption>
+									</figure>
+								</li>
+								<li>
+									<figure class="item_list">
+										<div class="item">
+											<a href="../author/author_list.html" class="item_img next_over">
+												<img src="../resources/images/temp/temp_work_view4.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+											</a>
+											<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+											<div class="over trns split">
+												<div class="clc">
+													<a href="../author/author_list.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												</div>
+											</div>
+											<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										</div>
+										<figcaption class="info">
+											<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+										</figcaption>
+									</figure>
+								</li>
+								<li>
+									<figure class="item_list">
+										<div class="item">
+											<a href="../author/author_list.html" class="item_img next_over">
+												<img src="../resources/images/temp/temp_work_view5.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+											</a>
+											<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+											<div class="over trns split">
+												<div class="clc">
+													<a href="../author/author_list.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												</div>
+											</div>
+											<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										</div>
+										<figcaption class="info">
+											<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
+						</div>
+						<!-- //작가의 다른 작품 -->
+						
+						<!-- btn_wrap -->
+						<div class="btn_wrap topline">
+							<button type="button" class="btnsM btn_sty3">
+								<span>목록</span>
+							</button>
+						</div>
+						<!-- //btn_wrap -->
+					</div>
+					<!-- 작가소개 : 탭 내용 영역 (e) -->
+
+					<!-- 작가이력 : 탭 내용 영역 (s) -->
+					<div class="sub_mgt7 section1 tabview">
+						<div class="history_list">
+							<div class="tit_area">
+								<h5 class="sectit2">학력</h5>
+							</div>
+							<ul class="txt_desc1 ftclr_gray1">
+								<li>
+									<em class="cl tit">1999<span class="blind">년</span></em>
+									<span class="cl txt">
+										New York Academy of Arts, Modern Painting, 석사
+									</span>
+								</li>
+								<li>
+									<em class="cl tit">1999<span class="blind">년</span></em>
+									<span class="cl txt">
+										서울대학교, 서양학과, 학사 졸업
+									</span>
+								</li>
+								<li>
+									<em class="cl tit">1999<span class="blind">년</span></em>
+									<span class="cl txt">
+										A갤러리 입문
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="history_list sub_mgt5">
+							<div class="tit_area">
+								<h5 class="sectit2">이력</h5>
+							</div>
+							<strong class="txt_desc1">개인전</strong>
+							<ul class="txt_desc1 ftclr_gray1">
+								<li>
+									<em class="cl tit">2017<span class="blind">년</span></em>
+									<div class="cl txt">
+										<p class="area">Born to be wild, 000갤러리, 서울</p>
+										<p class="area">누군가에게는 흔하지 않은 일상전, 홍익대학교 대학로캠퍼스, 서울</p>
+										<div class="movie_area">
+											<img src="../resources/images/temp/temp_history_movie.jpg" alt="작가 프로필 사진" class="imgexpend" />
+										</div>
+									</div>
+								</li>
+								<li>
+									<em class="cl tit">2010<span class="blind">년</span></em>
+									<span class="cl txt">
+										서울대학교, 서양학과, 학사
+									</span>
+								</li>
+								<li>
+									<em class="cl tit">1999<span class="blind">년</span></em>
+									<span class="cl txt">
+										A갤러리 입문 
+									</span>
+								</li>
+							</ul>
+
+							<strong class="sub_mgt4 txt_desc1">수상</strong>
+							<ul class="txt_desc1 ftclr_gray1">
+								<li>
+									<em class="cl tit">2010<span class="blind">년</span></em>
+									<span class="cl txt">
+										어워드 2007. 작품상
+									</span>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 대여이력 -->
+						<div class="sub_mgt5">
+							<div class="tit_area">
+								<h5 class="cl sectit2">대여이력</h5>
+								<span class="clr txt_desc1">
+									총  <b class="ftclr_point1">200</b>건
+								</span>
+							</div>
+							<ul class="list_basic txt_desc1">
+								<li class="split">
+									<span class="cl">OOOO 갤러리</span>
+									<span class="ftclr_gray1">2016-06-01</span>
+								</li>
+								<li class="split">
+									<span class="cl">사단법인 OOOO 문화예술재단</span>
+									<span class="ftclr_gray1">2016-06-01 ~ 2016-06-01</span>
+								</li>
+								<li class="split">
+									<span class="cl">OOOO 갤러리</span>
+									<span class="ftclr_gray1">2016-06-01</span>
+								</li>
+								<li class="split">
+									<span class="cl">사단법인 OOOO 문화예술재단</span>
+									<span class="ftclr_gray1">2016-06-01 ~ 2016-06-01</span>
+								</li>
+							</ul>
+							<!-- paging -->
+							<!-- (!개발) 1~5까지 보여집니다. 
+								다섯단계 이전,이후는 5개 페이지 단위로 이동 / 한단계는 한페이지씩 이동
+							-->
+							<div class="paging">
+								<a href="#" class="btn_pg first"><i class="is_ico isi_pg_first">다섯단계 이전페이지</i></a>
+								<a href="#" class="btn_pg prev"><i class="is_ico isi_pg_prev">한단계 이전페이지</i></a>
+								<a href="#" class="num">1</a>
+								<a href="#" class="num">2</a>
+								<a href="#" class="num">3</a>
+								<a href="#" class="num active">4</a><!-- (!개발) 현재페이지 인경우 active클래스를 추가해 줍니다. -->
+								<a href="#" class="num">5</a> 
+								<a href="#" class="btn_pg next"><i class="is_ico isi_pg_next">한단계 다음페이지</i></a>
+								<a href="#" class="btn_pg end"><i class="is_ico isi_pg_end">다섯단계 이후페이지</i></a>
+							</div>
+							<!-- //paging -->
+							<!-- btn_wrap -->
+							<div class="btn_wrap topline sub_mgt5">
+								<button type="button" class="btnsM btn_sty3">
+									<span>목록</span>
+								</button>
+							</div>
+							<!-- //btn_wrap -->
+						</div>
+						<!-- //대여이력 -->
+					</div>
+					<!-- 작가이력 : 탭 내용 영역 (e) -->
+
+					<!-- 포트폴리오 : 탭 내용 영역 (s) -->
+					<div class="tabview">
+						<h5 class="blind">포트폴리오</h5>
+						<div class="silder_img_view">
+							<div class="silder_black">
+								<div class="photo_silder1 type_black owl-carousel owl-theme" id="silderPhoto2">
+									<div class="item split">
+										<dl class="clc">
+											<dt class="sectit2">The  Eternal Kitchen Violence</dt>
+											<dd><img src="../resources/images/temp/temp_view_imgview1.jpg" class="owl-lazy" alt=""></dd>
+										</dl>
+									</div>
+									<div class="item split">
+										<dl class="clc">
+											<dt class="sectit2">The  Eternal Kitchen Violence</dt>
+											<dd><img src="../resources/images/temp/temp_view_imgview2.jpg" class="owl-lazy" alt=""></dd>
+										</dl>
+									</div>
+								</div>
+								<div class="sectit5 photocount" id="sliderCount"></div>
+							</div>
+							<!-- btn_wrap -->
+							<div class="btn_wrap">
+								<button type="button" class="btnsM btn_sty3">
+									<span>목록</span>
+								</button>
+							</div>
+							<!-- //btn_wrap -->
+						</div>
+					</div>
+					<!-- 포트폴리오 : 탭 내용 영역 (e) -->
+
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- //content 영역(e) -->
+	
+	<!-- footer영역(s) -->
+	<footer class="footer" id="footer">
+		<ul class="foot_menu">
+			<li><a href="#">센터소개</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">오류신고</a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+		<address class="foot_addr">
+			(03082) 서울시 종로구 대학로 57 (연건동) 홍익대학교 대학로 캠퍼스<br class="s320" />
+			교육동 3층, 12층 / 대표전화 : 02-708-2244<br/>
+			<span class="ftclr_default">&copy; 예술경영지원센터</span>
+		</address>
+		<div class="foot_sns">
+			<a href="#"><i class="inc_ico isi_sns1">페이스북</i></a>
+			<a href="#"><i class="inc_ico isi_sns2">블로그</i></a>
+			<a href="#"><i class="inc_ico isi_sns3">인스타그램</i></a>
+		</div>
+	</footer>
+	<!-- //footer영역(e) -->
+	<!-- 최상단 이동 버튼영역(s) -->
+	<div class="btntop">
+		<a href="#header"><span class="cscon csc_arrow3 active">상단으로</span></a>
+	</div>
+	<!-- //최상단 이동 버튼영역(e) -->
+</div>
+
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<script type="text/javascript" src="../resources/js/slider.js"></script>
+<script type="text/javascript" src="../resources/js/pop.js"></script>
+<script>
+	tabFixScroll('#fixTab'); //탭영역이 스크롤시 fix되는 경우
+</script>
+</body>
+</html>

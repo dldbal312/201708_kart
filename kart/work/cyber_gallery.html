@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>작품 리스트 &lt; 미술자원공유센터</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="문화체육관광부 미술자원공유센터,문화체육관광부,미술자원공유센터">
+	<meta name="description" content="문화체육관광부 미술자원공유센터">
+	<meta name="author" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:description" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:image" content="#">
+	<meta property="og:url" content="#">
+	<meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
+	<!-- Favicon -->
+	<link rel="SHORTCUT ICON" href="../resources/images/common/favicon.ico">
+	<link rel="apple-touch-icon" href="../resources/images/common/bookmark.png"><!-- 애플 아이콘 -->
+	<link rel="apple-touch-icon-precomposed" href="../resources/images/common/bookmark.png"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/inc.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/form.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/sub.css"><!-- 서브페이지에서만 호출 -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/cyber.css"><!-- 사이버 갤러리가 오는 페이지만 호출 -->
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+	<![endif]-->
+	<!-- Javascript -->
+	<script type="text/javascript" src="../resources/js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/modernizr.custom.31356.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../resources/js/lib/html5.js"></script>
+		<script type="text/javascript" src="../resources/js/lib/respond.min.js"></script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['NanumSquare','Noto Sans KR']
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.placeholders.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.lazyload.min.js"></script>
+	<!-- plugins -->
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/ui-select/select2.css">
+	<script type="text/javascript" src="../resources/plugins/ui-select/jquery.ui-selectBox.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.theme.default.css">
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel.js"></script>
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel2.thumbs.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 달력 plugin -->
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/moment.latest.min.js"></script>
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/pignose.calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/pignose-calendar/pignose.calendar.css">
+</head>
+<body>
+<!-- 스킵 네비게이션(s) -->
+<div id="skipNavigation">
+	<ul>
+		<li>
+			<a href="#contents">본문 바로가기</a>
+		</li>
+		<li>
+			<a href="#headerGnb">전체메뉴 바로가기</a>
+		</li>
+		<li>
+			<a href="#footer">하단 바로가기</a>
+		</li>
+	</ul>
+</div>
+<!--// 스킵 네비게이션(e) -->
+
+<div id="wrap">
+
+	<a href="#" class="btnsM btn_sty3 open_gallery">
+		<span>사이버전시관 임시버튼</span>
+	</a>
+	<section id="cyberGallery">
+		<h1 class="blind">사이버갤러리 보기</h1>
+		<div class="gallery_screen">
+			<div class="bg_area">
+				<div>
+					<img src="../resources/images/cyber/bg_cyber_gallery01.jpg" alt="가정 실내 배경" class="bg_gallery01 on">
+					<img src="../resources/images/cyber/bg_cyber_gallery02.jpg" alt="사무실 배경" class="bg_gallery02">
+					<img src="../resources/images/cyber/bg_cyber_gallery03.jpg" alt="지하철 배경" class="bg_gallery03">
+					<img src="../resources/images/cyber/bg_cyber_gallery04.jpg" alt="갤러리 배경" class="bg_gallery04">
+				</div>
+			</div>
+
+			<!-- 높이 기준(s) -->
+			<div class="pointer meter01">
+				<div>
+					<span>3m</span>
+				</div>
+			</div>
+			<div class="pointer meter02">
+				<div>
+					<span>2m</span>
+				</div>
+			</div>
+			<div class="pointer meter03">
+				<div>
+					<span>1m</span>
+				</div>
+			</div>
+			<div class="pointer meter00">
+				<div>
+					<span>0m</span>
+				</div>
+			</div>
+			<!--// 높이 기준(e) -->
+
+			<!-- 전시 작품(s) -->
+			<div class="gallery_object">
+				<div class="frame">
+					<div class="art_work">
+						<img src="../resources/images/cyber/cyber_art_work.jpg" alt="작품명 : 바람에게서 듣다">
+					</div>
+				</div>
+			</div>
+			<!--/ 전시 작품(e) -->
+
+			<div class="user_ctrl">
+				<a href="#galleryOption" class="btnsS btn_sty1 btn_next_view"><span>옵션선택<i class="cscon csc_arrow2"></i></span></a>
+			</div>
+			<!-- 상세 검색 클릭시 나오는 영역 -->
+			<div class="box_detail" id="galleryOption">
+				<div class="user_select">
+					<div class="type2">
+						<ul class="tg_list">
+							<li>
+								<a href="#" class="alink">
+									<div class="info wsp_normal">
+										<span class="sectit4">집안 내부</span>
+									</div>
+									<span class="btn_view"><i class="cscon csc_arrow5">내용보기</i></span>
+								</a>
+								<div class="qna_cont">
+									<a href="#" class="txt_desc1 split">
+										집안 내부
+									</a>
+									<a href="#" class="txt_desc1 split">
+										사무실
+									</a>
+									<a href="#" class="txt_desc1 split">
+										지하철
+									</a>
+									<a href="#" class="txt_desc1 split">
+										갤러리
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="user_select">
+					<div class="type2">
+						<ul class="tg_list">
+							<li>
+								<a href="#" class="alink">
+									<div class="info wsp_normal">
+										<span class="sectit4">상단</span>
+									</div>
+									<span class="btn_view"><i class="cscon csc_arrow5">내용보기</i></span>
+								</a>
+								<div class="qna_cont">
+									<a href="#" class="txt_desc1 split">
+										상단
+									</a>
+									<a href="#" class="txt_desc1 split">
+										중단
+									</a>
+									<a href="#" class="txt_desc1 split">
+										하단
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="user_select">
+					<div class="type2">
+						<ul class="tg_list">
+							<li>
+								<a href="#" class="alink">
+									<div class="info wsp_normal">
+										<span class="sectit4">액자있음</span>
+									</div>
+									<span class="btn_view"><i class="cscon csc_arrow5">내용보기</i></span>
+								</a>
+								<div class="qna_cont">
+									<a href="#" class="txt_desc1 split">
+										액자있음
+									</a>
+									<a href="#" class="txt_desc1 split">
+										액자없음
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<a href="#" class="btnsS btn_sty1 btn_apply"><span>적용</span></a>
+			</div>
+			<!-- //상세 검색 클릭시 나오는 영역 -->
+		</div>
+		<section class="sub_contents section1">
+			<ul class="sub_mgt5 link_tab_style1 dex3">
+				<li class="active"><a href="#" role="button"><span>작품정보</span></a></li>
+				<li><a href="#" role="button"><span>작가정보</span></a></li>
+				<li><a href="#" role="button"><span>작가의 다른작품</span></a></li>
+			</ul>
+			<div class="tabview_wrap">
+				<!-- 작품정보 탭(s) -->
+				<div class="tabview sub_mgt5">
+					<h2 class="blind">작품정보</h2>
+					<table class="view_basic_info txt_desc1">
+						<caption>작품정보</caption>
+						<colgroup>
+							<col style="width:12%">
+							<col>
+						</colgroup>	
+						<tbody>	
+							<tr>
+								<th scope="row">작품명</th>
+								<td class="ftclr_gray1">바람에게서 듣다</td>
+							</tr>	
+							<tr>
+								<th scope="row">제작년도</th>
+								<td class="ftclr_gray1">1979년</td>
+							</tr>	
+							<tr>
+								<th scope="row">크기</th>
+								<td class="ftclr_gray1">80.3cm X 130.3cm, 31.61inch X 51.3inch</td>
+							</tr>	
+							<tr>
+								<th scope="row">장르</th>
+								<td class="ftclr_gray1">회화</td>
+							</tr>	
+							<tr>
+								<th scope="row">테마</th>
+								<td class="ftclr_gray1">풍경</td>
+							</tr>	
+							<tr>
+								<th scope="row">컬러</th>
+								<td class="ftclr_gray1">
+									<div class="color_wrap">
+										<span class="chkColor1">빨강색</span>
+										<span class="chkColor2">오렌지색</span>
+										<span class="chkColor3">갈색</span>
+										<span class="chkColor4">노랑색</span>
+										<span class="chkColor5">녹색</span>
+										<span class="chkColor6">하늘색</span>
+										<span class="chkColor7">파란색</span>
+										<span class="chkColor8">흰색</span>
+										<span class="chkColor9">검정색</span>
+										<span class="chkColor10">회색</span>
+										<span class="chkColor11">보라색</span>
+										<span class="chkColor12">분홍색</span>
+									</div>
+								</td>
+							</tr>	
+							<tr>
+								<th scope="row">재료</th>
+								<td class="ftclr_gray1">캔버스 위 유채물감</td>
+							</tr>	
+							<tr>
+								<th scope="row">설명</th>
+								<td class="ftclr_gray1">‘바람에게서 듣다’는 1979년 OO사에 의탁하던 시절 그렸던 작품이다. (…생략) 바람에게서 듣다’는 1979년 OO사에 의탁하던 시절 그렸던 작품이다. 바람에게서 듣다’는 1979년 OO사에 의탁하던 시절 그렸던 작품이다. 바람에게서 듣다’는 1979년 OO사에 의탁하던 시절 그렸던 작품이다. 바람에게서 듣다’는 1979년 OO사에 의탁하던 시절 그렸던 작품이다.</td>
+							</tr>	
+							<tr>
+								<th scope="row">작품가</th>
+								<td class="ftclr_gray1"><strong class="ftclr_point1">15,000,000원</strong></td>
+							</tr>	
+							<tr>
+								<th scope="row">대여상태</th>
+								<td class="ftclr_gray1">
+									<span class="ftclr_point1">대여가능</span>
+								</td>
+							</tr>		
+							<tr>
+								<th scope="row">해시태그</th>
+								<td class="ftclr_gray1">
+									<div class="tag_area">
+										<span class="blind">해시태그:</span>
+										<a href="#" class="tag" target="_blank" title="새창열림">#풍경</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#서양화</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#홍길동화백</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#미술작</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#1981</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#서양화</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#홍길동화백</a>
+										<a href="#" class="tag" target="_blank" title="새창열림">#미술</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 작품정보 탭(e) -->
+				<!-- 작가정보 탭(s) -->
+				<div class="tabview sub_mgt5">
+					<h2 class="blind">작가정보</h2>
+					<div class="author_info">
+						<div class="thumb">
+							<div class="img">
+								<img src="../resources/images/temp/temp_author_list1.jpg" alt="OOO갤러리 로고" class="imgexpend">
+							</div>
+						</div>
+						<div class="info_tbl">
+							<table class="view_basic_info txt_desc1">
+								<caption>작가정보</caption>
+								<colgroup>
+									<col style="width:12%">
+									<col>
+								</colgroup>	
+								<tbody>	
+									<tr>
+										<th scope="row">작가 이름</th>
+										<td class="ftclr_gray1">홍길동</td>
+									</tr>
+									<tr>
+										<th scope="row">예명(호)</th>
+										<td class="ftclr_gray1">의적</td>
+									</tr>
+									<tr>
+										<th scope="row">출생년도</th>
+										<td class="ftclr_gray1">1929</td>
+									</tr>
+									<tr>
+										<th scope="row">국적</th>
+										<td class="ftclr_gray1">대한민국</td>
+									</tr>
+									<tr>
+										<th scope="row">홈페이지</th>
+										<td class="ftclr_gray1">
+											<a href="http://www.gokams.or.kr" title="새창열림" target="_balnk" class="ftclr_gray1">http://www.gokams.or.kr </a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">페이스북</th>
+										<td class="ftclr_gray1">
+											<a href="http://www.facebook.com/gokams" title="새창열림" target="_balnk" class="ftclr_gray1">http://www.facebook.com/gokams </a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">자기소개</th>
+										<td class="ftclr_gray1">담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면… 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면 언제든 작품이 필요하시면 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면 언제든 작품이 필요하시면 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면 담양의 A갤러리를 중심으로 활동중입니다. 언제든 작품이 필요하시면... (생략)</td>
+									</tr>
+									<tr>
+										<th scope="row">해시태그</th>
+										<td class="ftclr_gray1">
+											<div class="tag_area">
+												<span class="blind">해시태그:</span>
+												<a href="#" class="tag" target="_blank" title="새창열림">#풍경</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#서양화</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#홍길동화백</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#미술작</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#1981</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#서양화</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#홍길동화백</a>
+												<a href="#" class="tag" target="_blank" title="새창열림">#미술</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- 작가정보 탭(e) -->
+				<!-- 작가의 다른작품 탭(s) -->
+				<div class="tabview sub_mgt5">
+					
+					<!-- 작가의 다른 작품 -->
+					<div class="view_etc_work">
+						<div class="tit_area">
+							<h5 class="cl blind">작가의 다른작품</h5>
+							<div class="clr sectit5">
+				 				<a href="../work/work_view.html" title="새창열림" target="_blank">
+				 					더보기 <i class="is_ico isi_more">다른작품 검색/더보기</i>
+				 				</a>
+				 			</div>
+						</div>
+						<ul class="gallery_list col5">
+							<li>
+								<figure class="item_list">
+									<div class="item">
+										<div class="cate_wrap">
+											<span class="category bgopc_cate1">대여중</span>
+										</div>
+										<a href="../work/work_view.html" class="item_img next_over">
+											<img src="../resources/images/temp/temp_work_view1.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+										</a>
+										<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										<div class="over trns split">
+											<div class="clc">
+												<a href="../work/work_view.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												<a href="#" class="btnsS btn_sty3"><span>사이버갤러리</span></a>
+											</div>
+										</div>
+										<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+									</div>
+									<figcaption class="info">
+										<span class="sectit3">바람에게서 듣다</span>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="item_list">
+									<div class="item">
+										<a href="../work/work_view.html" class="item_img next_over">
+											<img src="../resources/images/temp/temp_work_view2.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+										</a>
+										<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										<div class="over trns split">
+											<div class="clc">
+												<a href="../work/work_view.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												<a href="#" class="btnsS btn_sty3"><span>사이버갤러리</span></a>
+											</div>
+										</div>
+										<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+									</div>
+									<figcaption class="info">
+										<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="item_list">
+									<div class="item">
+										<a href="../work/work_view.html" class="item_img next_over">
+											<img src="../resources/images/temp/temp_work_view3.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+										</a>
+										<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										<div class="over trns split">
+											<div class="clc">
+												<a href="../work/work_view.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												<a href="#" class="btnsS btn_sty3"><span>사이버갤러리</span></a>
+											</div>
+										</div>
+										<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+									</div>
+									<figcaption class="info">
+										<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="item_list">
+									<div class="item">
+										<a href="../work/work_view.html" class="item_img next_over">
+											<img src="../resources/images/temp/temp_work_view4.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+										</a>
+										<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										<div class="over trns split">
+											<div class="clc">
+												<a href="../work/work_view.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												<a href="#" class="btnsS btn_sty3"><span>사이버갤러리</span></a>
+											</div>
+										</div>
+										<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+									</div>
+									<figcaption class="info">
+										<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="item_list">
+									<div class="item">
+										<a href="../work/work_view.html" class="item_img next_over">
+											<img src="../resources/images/temp/temp_work_view5.jpg" alt="바람에게서 듣다 바람에게서 듣다" class="imgexpend" />
+										</a>
+										<!-- (개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+										<div class="over trns split">
+											<div class="clc">
+												<a href="../work/work_view.html" class="btnsS btn_sty3"><span>상세보기</span></a>
+												<a href="#" class="btnsS btn_sty3"><span>사이버갤러리</span></a>
+											</div>
+										</div>
+										<!-- //(개발) PC에서 over했을때 보여지는 영역링크 입니다. -->
+									</div>
+									<figcaption class="info">
+										<span class="sectit3">바람에게서 듣다 바람에게서 듣다</span>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+					<!-- //작가의 다른 작품 -->
+				</div>
+				<!-- 작가의 다른작품 탭(e) -->
+			</div>
+			<!-- btn_wrap -->
+			<div class="btn_wrap sub_mgt5 topline">
+				<div class="clc">
+					<!-- (!개발) 버튼 활성화될때 disabled="disabled" 속성 삭제 -->
+					<button type="button" class="btnsM btn_sty2" disabled="disabled">
+						<span>대여신청</span>
+					</button>
+				</div>
+				<div class="clc">
+					<!-- (!개발) 버튼 활성화될때 disabled="disabled" 속성 삭제 -->
+					<button type="button" class="btnsM btn_sty1" disabled="disabled">
+						<span>스크랩취소</span>
+					</button>
+				</div>
+			</div>
+			<!-- //btn_wrap -->
+		</section>
+		<button type="button" class="close_gallery">
+			<span><span class="blind">사이버갤러리</span>닫기</span>
+		</button>
+	</section>
+
+</div>
+
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<script type="text/javascript" src="../resources/js/pop.js"></script>
+<!-- (!개발) 사이버 갤러리가 오는 페이지인 경우 스크립트 추가 -->
+<script type="text/javascript" src="../resources/js/cyber.js"></script>
+<!-- //(!개발) 사이버 갤러리가 오는 페이지인 경우 스크립트 추가 -->
+</body>
+</html>

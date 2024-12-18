@@ -1,0 +1,747 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>작품관리 등록 &lt; 마이페이지 &lt; 미술자원공유센터</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="문화체육관광부 미술자원공유센터,문화체육관광부,미술자원공유센터">
+	<meta name="description" content="문화체육관광부 미술자원공유센터">
+	<meta name="author" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:description" content="문화체육관광부 미술자원공유센터">
+	<meta property="og:image" content="#">
+	<meta property="og:url" content="#">
+	<meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
+	<!-- Favicon -->
+	<link rel="SHORTCUT ICON" href="../resources/images/common/favicon.ico">
+	<link rel="apple-touch-icon" href="../resources/images/common/bookmark.png"><!-- 애플 아이콘 -->
+	<link rel="apple-touch-icon-precomposed" href="../resources/images/common/bookmark.png"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/inc.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/form.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/sub.css"><!-- 서브페이지에서만 호출 -->
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+	<![endif]-->
+	<!-- Javascript -->
+	<script type="text/javascript" src="../resources/js/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/modernizr.custom.31356.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../resources/js/lib/html5.js"></script>
+		<script type="text/javascript" src="../resources/js/lib/respond.min.js"></script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['NanumSquare','Noto Sans KR']
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.placeholders.min.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="../resources/js/lib/jquery.lazyload.min.js"></script>
+	<!-- plugins -->
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/ui-select/select2.css">
+	<script type="text/javascript" src="../resources/plugins/ui-select/jquery.ui-selectBox.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/owlslide/owl.theme.default.css">
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel.js"></script>
+	<script type="text/javascript" src="../resources/plugins/owlslide/owl.carousel2.thumbs.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../resources/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 달력 plugin -->
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/moment.latest.min.js"></script>
+	<script type="text/javascript" src="../resources/plugins/pignose-calendar/pignose.calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/plugins/pignose-calendar/pignose.calendar.css">
+</head>
+<body>
+<!-- 스킵 네비게이션(s) -->
+<div id="skipNavigation">
+	<ul>
+		<li>
+			<a href="#contents">본문 바로가기</a>
+		</li>
+		<li>
+			<a href="#headerGnb">전체메뉴 바로가기</a>
+		</li>
+		<li>
+			<a href="#footer">하단 바로가기</a>
+		</li>
+	</ul>
+</div>
+<!--// 스킵 네비게이션(e) -->
+
+<div id="wrap">
+	<!-- header영역(s) -->
+	<header class="header sub_header" id="header">
+		<div class="inner">
+			<h1 class="head_logo">
+				<a href="/" class="inc_ico ico_logo">ART-SHARING 미술자원공유서비스</a>
+			</h1>
+			<div class="clr">
+				<div class="head_user">
+					<a href="#">로그인</a>
+					<a href="#">회원가입</a>
+				</div>
+				<button type="button" class="btn_search" id="headSerachOpen" title="검색"><span class="inc_ico ico_search">검색</span></button>
+				<!-- 검색버튼 클릭시 나오는 영역 -->
+				<div class="hdsearch_area trns">
+					<form>
+						<fieldset>
+							<legend>미술자원공유서비스 검색영역</legend>
+							<div class="hd_search">
+								<label for="searchTxt" class="blind">검색어 입력</label>
+								<input type="text" name="searchTxt" id="searchTxt" class="inp" placeholder="검색어를 입력하세요">
+								<!-- (개발요소)검색어에 텍스트 입력시 삭제버튼 노출됩니다. -->
+								<div class="btn_wrap">
+									<div class="clr">
+										<button type="button" title="검색어 삭제"><span class="inc_ico ico_del">검색어 삭제</span></button>
+									</div>
+									<div class="clr">
+										<button type="button" title="검색"><span class="inc_ico ico_search2">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn_close"><span class="is_ico isi_close">닫기</span></a>
+						</fieldset>
+					</form>
+				</div>
+				<!-- //검색버튼 클릭시 나오는 영역 -->
+
+				<!-- pc에서만 나오는 메뉴 -->
+				<!-- (개발요소) 해당 페이지일 경우 li에 on클래스 넣어줍니다. -->
+				<div class="head_menu" id="head_menu">
+					<ul class="nav_menu">
+						<li><a href="#">작품</a></li>
+						<li><a href="#">작가</a></li>
+						<li><a href="#">대여업체</a></li>
+						<li><a href="#">화랑</a></li>
+						<li>
+							<a href="#">알림마당</a>
+							<ul class="depth2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">뉴스/홍보</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">서비스 소개</a>
+							<ul class="depth2">
+								<li><a href="#">예술경영센터</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- //pc에서만 나오는 메뉴 -->
+
+				<button type="button" id="headerGnb" class="btnh_gnb" title="전체메뉴"><span class="trns"><i>전체메뉴</i></span></button>
+				<!-- 전체메뉴 클릭시 나오는 메뉴 -->
+				<nav class="nav trns" id="nav">
+					<div class="user_menu">
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+					</div>
+					<div class="nav_menu_wrap">
+						<ul class="nav_menu">
+							<li><a href="#">작품</a></li>
+							<li><a href="#">작가</a></li>
+							<li><a href="#">대여업체</a></li>
+							<li><a href="#">화랑</a></li>
+							<li>
+								<a href="#">알림마당</a>
+								<ul class="depth2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">뉴스/홍보</a></li>
+									<li><a href="#">자료실</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">서비스 소개</a>
+								<ul class="depth2">
+									<li><a href="#">예술경영센터</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn_close"><span class="is_ico isi_close2">닫기</span></a>
+				</nav>
+				<!-- //전체메뉴 클릭시 나오는 메뉴 -->
+			</div>		
+		</div>	
+	</header>
+	<!-- //header영역(e) -->
+
+	<!-- 서브메뉴 영역(s) -->
+	<div id="leftMenu" class="lnb_wrap">
+		<nav class="lnb_nav">
+			<h2 class="blind">마이페이지</h2>
+			<h3 class="now_menu">작품관리</h3>
+			<!-- (개발요소) 해당 페이지일 경우 li에 class="active"를 넣어 줍니다. -->
+			<ul class="lnb_menu">
+				<li>
+					<a href="../mypage/myscrap_list.html"><span>마이스크랩</span></a>
+				</li>
+				<li>
+					<a href="../mypage/userinfo_write.html"><span>회원정보</span></a>
+				</li>
+				<li>
+					<a href="../mypage/inquiry_list.html"><span>1:1문의</span></a>
+				</li>
+				<li class="active">
+					<a href="../mypage/art_manage_list.html"><span>작품관리</span></a>
+				</li>
+				<li>
+					<a href="../mypage/rentadmin_author_list.html"><span>대여관리</span></a>
+				</li>
+				<li>
+					<a href="../mypage/display_admin_list.html"><span>전시/전속관리</span></a>
+				</li>
+			</ul>
+			<span class="state_arr">서브메뉴 전체보기</span>
+		</nav>
+	</div>
+	<!--// 서브메뉴 영역(e) -->
+	
+	<!-- content 영역(s) -->
+	<div id="contents" class="sub_wrap">
+		
+		<section class="sub_contents">
+			<div class="section1">
+				<form>
+					<fieldset>
+						<legend>작품관리 등록</legend>
+						<!-- bbs_write -->
+						<div class="bbs_box">
+							<dl class="bbs_write">
+								<dt class="sectit3">
+									<label class="tit" for="workTitle">
+										작품명 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">작품명을 입력해주세요.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="workTitle" name="workTitle" placeholder="작품명 입력" class="size_full" />
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<span class="tit">
+										공개여부
+									</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="chk_area">
+										<div class="choice_wrap">
+											<input type="radio" id="workVisibe1" name="workVisibey" class="img_radio" />
+											<label for="workVisibe1"><i></i>전체공개</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="radio" id="workVisibe2" name="workVisibey" class="img_radio" />
+											<label for="workVisibe2"><i></i>업체만</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="radio" id="workVisibe3" name="workVisibey" class="img_radio" />
+											<label for="workVisibe3"><i></i>비공개</label>
+										</div>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="productionYear">
+										제작년도 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">제작년도를 입력해주세요.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="productionYear" name="productionYear" placeholder="제작년도(최대 4자리) 입력" class="size_full" />
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<span class="tit">
+										장르
+									</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="chk_area col2">
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre1" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre1"><i></i>회화</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre2" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre2"><i></i>입체/미디어</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre3" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre3"><i></i>사진</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre4" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre4"><i></i>판화</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre5" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre5"><i></i>고미술</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre6" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre6"><i></i>기타</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkGenre7" name="chkGenre" class="img_checkbox" />
+											<label for="chkGenre7"><i></i>서예</label>
+										</div>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<span class="tit">
+										테마
+									</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="chk_area col2">
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme1" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme1"><i></i>풍경</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme2" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme2"><i></i>인물</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme3" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme3"><i></i>정물</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme4" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme4"><i></i>동물</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme5" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme5"><i></i>추상</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme6" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme6"><i></i>공간</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme7" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme7"><i></i>팝아트</label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkTheme8" name="chkTheme" class="img_checkbox" />
+											<label for="chkTheme8"><i></i>기타</label>
+										</div>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<span class="tit">
+										컬러
+									</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="chk_area col2">
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor1" name="chkColor" class="img_checkbox chkColor1" />
+											<label for="chkColor1"><i></i><span class="chkColor1">빨강색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor2" name="chkColor" class="img_checkbox chkColor2" />
+											<label for="chkColor2"><i></i><span class="chkColor2">오렌지색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor3" name="chkColor" class="img_checkbox chkColor3" />
+											<label for="chkColor3"><i></i><span class="chkColor3">갈색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor4" name="chkColor" class="img_checkbox chkColor4" />
+											<label for="chkColor4"><i></i><span class="chkColor4">노랑색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor5" name="chkColor" class="img_checkbox chkColor5" />
+											<label for="chkColor5"><i></i><span class="chkColor5">녹색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor6" name="chkColor" class="img_checkbox chkColor6" />
+											<label for="chkColor6"><i></i><span class="chkColor6">하늘색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor7" name="chkColor" class="img_checkbox chkColor7" />
+											<label for="chkColor7"><i></i><span class="chkColor7">파란색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor8" name="chkColor" class="img_checkbox chkColor8" />
+											<label for="chkColor8"><i></i><span class="chkColor8">흰색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor9" name="chkColor" class="img_checkbox chkColor9" />
+											<label for="chkColor9"><i></i><span class="chkColor9">검정색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor10" name="chkColor" class="img_checkbox chkColor10" />
+											<label for="chkColor10"><i></i><span class="chkColor10">회색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor11" name="chkColor" class="img_checkbox chkColor11" />
+											<label for="chkColor11"><i></i><span class="chkColor11">보라색</span></label>
+										</div>
+										<div class="choice_wrap">
+											<input type="checkbox" id="chkColor12" name="chkColor" class="img_checkbox chkColor12" />
+											<label for="chkColor12"><i></i><span class="chkColor12">분홍색</span></label>
+										</div>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="workMaterial">
+										작품재료 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">작품재료를 입력해주세요.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="workMaterial" name="workMaterial" placeholder="작품명 입력" class="size_full" />
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<span class="tit">
+										크기 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</span>
+									<span class="stxt">cm/inch 변환은 자동으로 이루어집니다. 가로와 세로는 필수입력입니다.</span>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">크기를 입력해주세요.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="work_art_size">
+										<div class="area_group">
+											<div class="choice_wrap">
+												<input type="radio" id="sizeCm" name="workSize" class="img_radio" checked="checked">
+												<label for="sizeCm"><i></i><span>cm</span></label>
+											</div>
+											<fieldset class="fld"><!-- 개발 : cm/inch 자동계산되는 부분은 fieldset에 disabled="disabled" 추가해 준다 -->
+												<div class="flex_group">
+													<label for="cmHorizontal" class="cl txt_desc1 ftclr_default">
+														가로<strong class="txt_ess ftclr_point1">* 필수입력</strong>
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="cmHorizontal" title="가로 입력" placeholder="가로" class="size_full">
+													</div>
+													<label for="cmVertical" class="cl txt_desc1 ftclr_default">
+														세로<strong class="txt_ess ftclr_point1">* 필수입력</strong>
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="cmVertical" title="세로 입력" placeholder="세로" class="size_full">
+													</div>
+												</div>
+												<div class="flex_group">
+													<label for="cmHeight" class="cl txt_desc1 ftclr_default">
+														높이
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="cmHeight" title="높이 입력" placeholder="높이" class="size_full">
+													</div>
+													<label for="cmEtc" class="cl txt_desc1 ftclr_default">
+														기타
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="cmEtc" title="기타 입력" placeholder="기타" class="size_full">
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="area_group">
+											<div class="choice_wrap">
+												<input type="radio" id="sizeInch" name="workSize" class="img_radio">
+												<label for="sizeInch"><i></i><span>inch</span></label>
+											</div>
+											<fieldset class="fld" disabled="disabled"><!-- 개발 : cm/inch 자동계산되는 부분은 fieldset에 disabled="disabled" 추가해 준다 -->
+												<div class="flex_group">
+													<label for="inchHorizontal" class="cl txt_desc1 ftclr_default">
+														가로<strong class="txt_ess ftclr_point1">* 필수입력</strong>
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="inchHorizontal" title="가로 입력" placeholder="가로" class="size_full">
+													</div>
+													<label for="inchVertical" class="cl txt_desc1 ftclr_default">
+														세로<strong class="txt_ess ftclr_point1">* 필수입력</strong>
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="inchVertical" title="세로 입력" placeholder="세로" class="size_full">
+													</div>
+												</div>
+												<div class="flex_group">
+													<label for="inchHeight" class="cl txt_desc1 ftclr_default">
+														높이
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="inchHeight" title="높이 입력" placeholder="높이" class="size_full">
+													</div>
+													<label for="inchEtc" class="cl txt_desc1 ftclr_default">
+														기타
+													</label>
+													<div class="cl input_wrt_wrap pct_wid15">
+														<input type="text" id="inchEtc" title="기타 입력" placeholder="기타" class="size_full">
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="workNumber">
+										호수
+									</label>
+									<span class="stxt">호수 입력을 원하시는 분만 수동으로 입력해주세요.</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="flex_group">
+										<div class="cl input_wrt_wrap pct_wid30">
+											<input type="text" id="workNumber" name="workNumber" title="호수 입력" placeholder="호수" class="size_full">
+										</div>
+										<span class="cl txt_desc1 ftclr_default">호</span>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="workPrice">
+										가격
+									</label>
+									<span class="stxt">작품 가격은 기업회원에게만 공개됩니다. 입력하지 않으실 경우 내용이 표시되지 않습니다.</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="flex_group">
+										<div class="cl input_wrt_wrap pct_wid30">
+											<input type="text" id="workPrice" name="workPrice" title="작품가격 입력" placeholder="작품가격" class="size_full">
+										</div>
+										<span class="cl txt_desc1 ftclr_default">원</span>
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<span class="tit">
+										작품소개
+									</span>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="editer_wrap">
+										<img src="../resources/images/temp/temp_editer.jpg" alt="" class="imgexpend ge-s768" >
+										<img src="../resources/images/temp/temp_m_editer.jpg" alt="" class="imgexpend s320" >
+									</div>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="hashTag">
+										해시태그
+									</label>
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="input_wrt_wrap">
+										<input type="text" id="hashTag" name="hashTag" placeholder="추가하려는 태그를 빈칸없이 입력" class="size_full">
+									</div>
+									<dl class="tag_area_box">
+										<dt class="blind">해시태그:</dt>
+										<dd class="tag">
+											<span>#풍경</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#서양화</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#홍길동</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#미술작</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#1981</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#서양화</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#홍길동</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+										<dd class="tag">
+											<span>#미술</span>
+											<a href="#" class="is_ico isi_del_tr1">태그삭제</a>
+										</dd>
+									</dl>
+								</dd>
+								<dt class="sectit3">
+									<label class="tit" for="portfolio">
+										작품사진 <strong class="txt_ess ftclr_point1">* 필수입력</strong>
+									</label>
+									<span class="stxt">이미지파일(jpg, png, gif)만 등록이 가능합니다.<br class="s320">(여러장 업로드 가능)</span>
+									<!-- 개발 : 에러인 경우 -->
+									<span class="stxt_error list_ico imp">작품사진을를 업로드해주세요.</span>
+									<!-- //개발 : 에러인 경우 -->
+								</dt>
+								<dd class="txt_desc1 ftclr_gray1">
+									<div class="filebox">
+										<div class="file_select">
+											<label for="portfolio"><i class="is_ico isi_add">파일선택</i></label>
+											<input type="file" id="portfolio" class="blind" />
+										</div>
+										<!-- (!개발요소) 첨부파일이 있을 경우에만 노출됩니다. 보여주는 경우 show 클래스를 추가 해 줍니다. -->
+										<div class="file_inner show" id="scrollMultiFile">
+											<ul class="multi_file full_img select_img">
+												<li>
+													<!-- (!개발) input에 checked가 되었을경우 : 대표이미지 / checked가 없는경우 : 대표설정 -->
+													<input type="radio" name="fileSelectImg" id="fileImg1" class="chk blind" checked="checked">
+													<label for="fileImg1" class="clc">
+														<span class="img">
+															<img src="../resources/images/temp/temp_file_img1.jpg" alt="">
+														</span>
+														<span class="sectit4">대표이미지</span>
+													</label>
+													<a href="#" class="btn_del"><i class="is_ico isi_del2">파일삭제</i></a>
+												</li>
+												<li>
+													<!-- (!개발) input에 checked가 되었을경우 : 대표이미지 / checked가 없는경우 : 대표설정 -->
+													<input type="radio" name="fileSelectImg" id="fileImg2" class="chk blind">
+													<label for="fileImg2" class="clc">
+														<span class="img">
+															<img src="../resources/images/temp/temp_file_img2.jpg" alt="">
+														</span>
+														<span class="sectit4">대표설정</span>
+													</label>
+													<a href="#" class="btn_del"><i class="is_ico isi_del2">파일삭제</i></a>
+												</li>
+												<li>
+													<!-- (!개발) input에 checked가 되었을경우 : 대표이미지 / checked가 없는경우 : 대표설정 -->
+													<input type="radio" name="fileSelectImg" id="fileImg3" class="chk blind">
+													<label for="fileImg3" class="clc">
+														<span class="img">
+															<img src="../resources/images/temp/temp_file_img3.jpg" alt="">
+														</span>
+														<span class="sectit4">대표설정</span>
+													</label>
+													<a href="#" class="btn_del"><i class="is_ico isi_del2">파일삭제</i></a>
+												</li>
+												<li>
+													<!-- (!개발) input에 checked가 되었을경우 : 대표이미지 / checked가 없는경우 : 대표설정 -->
+													<input type="radio" name="fileSelectImg" id="fileImg4" class="chk blind">
+													<label for="fileImg4" class="clc">
+														<span class="img">
+															<img src="../resources/images/temp/temp_file_img1.jpg" alt="">
+														</span>
+														<span class="sectit4">대표설정</span>
+													</label>
+													<a href="#" class="btn_del"><i class="is_ico isi_del2">파일삭제</i></a>
+												</li>
+												<li>
+													<!-- (!개발) input에 checked가 되었을경우 : 대표이미지 / checked가 없는경우 : 대표설정 -->
+													<input type="radio" name="fileSelectImg" id="fileImg5" class="chk blind">
+													<label for="fileImg5" class="clc">
+														<span class="img">
+															<img src="../resources/images/temp/temp_file_img2.jpg" alt="">
+														</span>
+														<span class="sectit4">대표설정</span>
+													</label>
+													<a href="#" class="btn_del"><i class="is_ico isi_del2">파일삭제</i></a>
+												</li>
+												<li>
+													<!-- (!개발) input에 checked가 되었을경우 : 대표이미지 / checked가 없는경우 : 대표설정 -->
+													<input type="radio" name="fileSelectImg" id="fileImg6" class="chk blind">
+													<label for="fileImg6" class="clc">
+														<span class="img">
+															<img src="../resources/images/temp/temp_file_img3.jpg" alt="">
+														</span>
+														<span class="sectit4">대표설정</span>
+													</label>
+													<a href="#" class="btn_del"><i class="is_ico isi_del2">파일삭제</i></a>
+												</li>
+											</ul>
+										</div>
+										<!-- //(!개발요소) 첨부파일이 있을 경우에만 노출됩니다. 보여주는 경우 show 클래스를 추가 해 줍니다. -->
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!-- //bbs_write -->
+						<div class="btn_wrap">
+							<div class="clc">
+								<button type="button" class="btnsM btn_sty3">
+									<span>저장하기</span>
+								</button>
+							</div>
+							<div class="clc">
+								<button type="button" class="btnsM btn_sty1">
+									<span>취소하기</span>
+								</button>
+							</div>
+						</div>
+					</fieldset>
+				</form>				
+			</div>
+		</section>
+
+	</div>
+	<!-- //content 영역(e) -->
+	
+	<!-- footer영역(s) -->
+	<footer class="footer" id="footer">
+		<ul class="foot_menu">
+			<li><a href="#">센터소개</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">오류신고</a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+		<address class="foot_addr">
+			(03082) 서울시 종로구 대학로 57 (연건동) 홍익대학교 대학로 캠퍼스<br class="s320" />
+			교육동 3층, 12층 / 대표전화 : 02-708-2244<br/>
+			<span class="ftclr_default">&copy; 예술경영지원센터</span>
+		</address>
+		<div class="foot_sns">
+			<a href="#"><i class="inc_ico isi_sns1">페이스북</i></a>
+			<a href="#"><i class="inc_ico isi_sns2">블로그</i></a>
+			<a href="#"><i class="inc_ico isi_sns3">인스타그램</i></a>
+		</div>
+	</footer>
+	<!-- //footer영역(e) -->
+	<!-- 최상단 이동 버튼영역(s) -->
+	<div class="btntop">
+		<a href="#header"><span class="cscon csc_arrow3 active">상단으로</span></a>
+	</div>
+	<!-- //최상단 이동 버튼영역(e) -->
+</div>
+
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<script type="text/javascript" src="../resources/js/slider.js"></script>
+<script type="text/javascript" src="../resources/js/pop.js"></script>
+<script>
+	$("#scrollMultiFile").mCustomScrollbar({
+		theme: "dark-thin",
+		keyboard:{
+			enable: true
+		},
+		axis:"x"
+	});	
+</script>
+</body>
+</html>

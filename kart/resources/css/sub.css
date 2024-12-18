@@ -1,0 +1,1026 @@
+@charset "utf-8";
+
+/* 센터소개 - 인사말 */
+.intro_title{
+	font-family: 'NanumSquare';
+	font-weight: 900;
+	word-break: keep-all
+}
+.intro_txt{
+	font-size: 0.813em;
+	text-align: justify;
+	margin-top: 20px
+}
+.intro_psd{
+	font-size: 0.75em;
+	text-align: right;
+	margin-top: 20px;
+}
+.intro_psd > b{
+	font-size: 1.167em;
+	font-weight: 500
+}
+
+/* 회원 - 로그인 */
+.login_wrap{
+	padding-top: 40px
+}
+.login_wrap .login_form{
+	width: 100%;
+	text-align: center
+}
+.login_wrap .input_wrt_wrap input[type='text'],
+.login_wrap .input_wrt_wrap input[type='password']{
+	font-size: 0.938em;
+	height: 40px;
+	line-height: 40px
+}
+.login_wrap .comment{
+	text-align: center;
+	font-size: 0.813em;
+	margin-bottom: 30px
+}
+.login_wrap .input_wrt_wrap{
+	margin-top: 10px
+}
+.login_wrap .input_wrt_wrap .input_wrap .btn_reset{
+	width: 38px;
+	height: 38px
+}
+.login_wrap .input_wrt_wrap .input_wrap .btn_reset .is_ico.isi_reset{
+	margin: 5px auto
+}
+.login_wrap .btn_wrap{
+	margin-top: 30px
+}
+.login_wrap > ul.member_link{
+	text-align: center;
+	margin-top: 30px
+}
+.login_wrap > ul.member_link li{
+	position: relative;
+	display: inline-block;
+	font-size: 0.813em;
+	line-height: 1;
+	font-weight: 400;
+	letter-spacing: -0.05em;
+	padding: 0 8px
+}
+.login_wrap > ul.member_link li:first-child:before{
+	display: none
+}
+.login_wrap > ul.member_link li:before{
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	height: 14px;
+	border-left: 1px solid #f1f1f1;
+	margin-top: -7px;
+}
+.login_wrap > ul.member_link li a:hover,
+.login_wrap > ul.member_link li a:focus{
+	text-decoration: underline
+}
+
+/*** 로그인/회원가입 ***/
+/* 비밀번호 재발급 >  결과 */
+.complete_area.ico_guide:before{
+	background-image:url('../images/sub/complete_ico_guide.png');
+	width:64px;
+	height:48px;
+}
+/* 아이디찾기, 비밀번호 재발급 */
+.mem_find .f_l, .mem_find .f_r{
+	width:100%;
+	padding-top:35px;
+}
+.mem_find .f_r.id_find .btn_wrap{
+	margin-top:30px;
+}
+.mem_find .f_l > .list_ico,
+.mem_find .f_r > .list_ico{
+	margin-top:28px;
+}
+.mem_find .chk_area{
+	margin-top:12px;
+}
+.certif_area .gray_box{
+	background-color:#f1f1f1;
+	margin-top:10px; 
+	padding:18px 20px;
+	text-align:center;
+}
+.certif_area .sectit3{
+	font-size:0.813em;
+	font-family:'NanumSquare';
+    font-weight:700;
+}
+.certif_area .isi_arrL1{
+	margin-left:5px;
+}
+.certif_area .txt_desc3{
+	margin-top:3px;
+}
+
+/* 회원가입 */
+.join_box .clc:before{
+	width:32px;
+	height:28px;
+	background:url('../images/sub/join_icon.png') no-repeat;
+	background-size:95px auto;
+}
+.join_box .ico1:before{
+	background-position:0 0;
+}
+.join_box .ico2:before{
+	background-position:-32px 0;
+}
+.join_box .ico3:before{
+	background-position:-64px 0;
+}
+.join_box .ico1:hover:before{
+	background-position:0 -30px;
+}
+.join_box .ico2:hover:before{
+	background-position:-32px -30px;
+}
+.join_box .ico3:hover:before{
+	background-position:-64px -30px;
+}
+
+/* 회원가입 > 본인인증 */
+.certif_box .clc:before{
+	width:42px;
+	height:48px;
+	background:url('../images/sub/join_certif_icon.png') no-repeat;
+	background-size:84px auto;
+}
+.certif_box .ico1:before{
+	background-position:0 0;
+}
+.certif_box .ico2:before{
+	background-position:0 -48px;
+}
+.certif_box .ico1:hover:before{
+	background-position:-42px 0;
+}
+.certif_box .ico2:hover:before{
+	background-position:-42px -48px;
+}
+
+/* 회원가입 > 가입완료 */
+.complete_area.ico_complete:before{
+	background-image:url('../images/sub/complete_ico_complete.png');
+	width:48px;
+	height:48px;
+}
+
+/* 로그인 > 휴면계정안내 */
+.complete_area.ico_dormancy:before{
+	background-image:url('../images/sub/complete_ico_dormancy.png');
+	width:40px;
+	height:48px;
+}
+
+/* 마이페이지 > 회원탈퇴 */
+.complete_area.ico_out:before{
+	background-image:url('../images/sub/complete_ico_out.png');
+	width:65px;
+	height:48px;
+}
+
+/*** 고객센터 ***/
+/* 이용약관 - 이용약관,개인정보처리방침*/
+.policy_box{
+	color: #959595;
+	line-height: 1.8;
+	margin-top: 30px
+}
+.policy_box > h4:first-child{
+	margin-top: 0
+}
+.policy_box > h4{
+	margin: 25px 0 10px
+}
+.policy_box > h5{
+	color: #111;
+	margin: 15px 0 10px
+}
+.policy_box > p + ul{
+	margin-top: 25px
+}
+.policy_box .deco_line{
+	position:relative;
+}
+.policy_box .deco_line:before{
+	content:'';
+	position:absolute;
+	bottom:-1px;
+	height:2px;
+	width:100%;
+	background-color:rgba(101,31,255,0.3)
+}
+.policy_box [class*="txt_desc"]{
+	line-height: 1.8
+}
+.policy_box [class*='indent'] > p{
+	text-indent: 0
+}
+.policy_box > ul > li:first-child{
+	margin-top: 0
+}
+.policy_box > ul > li{
+	margin-top: 8px
+}
+.policy_box > ul > li ul li{
+	margin-top: 4px
+}
+.policy_box b{
+	font-weight: 400
+}
+.policy_box .short_blank{
+	margin-top: 15px
+}
+.policy_box .indent1{
+	text-indent: -13px;
+	padding-left: 13px
+}/* 첫글자가 한자리수 숫자 구분일 경우 */
+.policy_box .indent2{
+	text-indent: -7px;
+	padding-left: 7px
+}/* 첫글자가 하이픈(-) 구분일 경우 */
+.policy_box .indent3{
+	text-indent: -18px;
+	padding-left: 18px
+}/* 첫글자가 한글 구분일 경우 */
+.policy_box .indent4{
+	text-indent: -16px;
+	padding-left: 16px
+}/* 첫글자가 참고표(※)일 경우 */
+
+/* 대여업체 > 상세, 화랑 > 상세 */
+.address_wrap{
+	margin-top:10px;
+}
+
+/* 작가상세보기 */
+.imgexpend.img_size1{
+	width:70%;
+}
+/* 작가상세보기 > 작가이력 */
+.history_list  strong.txt_desc1{
+	display:block;
+	margin-bottom:2px;
+}
+.history_list .txt_desc1 > li,
+.history_list .txt .area{
+	display:table;
+	width:100%;
+	margin-top:6px;
+}
+.history_list .txt_desc1 > li:first-child,
+.history_list .txt .area:first-child{
+	margin-top:0 !important;
+}
+.history_list .tit{
+	padding-right:20px;
+	width:1%;
+	white-space:nowrap;
+	min-width:50px;
+	box-sizing:border-box;
+	vertical-align:top
+}
+.history_list .txt .movie_area{
+	margin:10px 0;
+}
+
+/* 작품 > 신청 */
+.work_apply .view_info_list [class*='txt_desc'].d_b{
+	display:none;
+}
+/* 작가 > 신청 */
+.author_apply .view_info_list [class*='txt_desc'].d_b{
+	margin-bottom:10px;
+}
+/* 마이페이지 > 회원정보 */
+.add_div_list{
+	padding-top:15px;
+}
+.add_div_list > li{
+	border-top:1px solid #ddd;
+	padding-top:20px;
+	margin-top:20px;
+}
+.add_div_list > li:first-child{
+	border-top:none !important;
+	padding-top:0 !important;
+	margin-top:0 !important;
+}
+/* 마이페이지 > 작품관리 > 등록/신규 */
+.work_art_size .area_group > .choice_wrap{
+	margin-bottom:2px;
+}
+.work_art_size .flex_group .txt_ess{
+	width:auto;
+	font-size:inherit;
+	width:6px;
+	font-weight:normal;
+	margin-left:2px;
+}
+.work_art_size .flex_group .cl.txt_desc1{
+	padding-left:10px !important;
+	min-width:32px;
+}
+.work_art_size .flex_group .cl.txt_desc1:first-child,
+.work_art_size .flex_group:first-child .cl.txt_desc1:first-child{
+	padding-left:0 !important;
+}
+.work_art_size .fld[disabled] input[type="text"]{
+	background-color:transparent;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+
+/* 마이페이지 > 대여관리 상세 */
+.view_basic_info .total_area th,
+.view_basic_info .total_area td{
+	padding-top:8px;
+}
+
+/* 검색 */
+.search_box{
+	position:relative;
+}
+.search_box > [class*='search_']{
+	margin-top:10px;
+}
+.search_box > [class*='search_']:first-child{
+	margin-top:0;
+}
+.search_keyword .input_wrt_wrap .inp{
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-color:#111;
+	border-width:2px;
+}
+.search_keyword .input_wrt_wrap .inp{
+	height:40px;
+	padding-right:60px;
+}
+.search_keyword .btn_pos{
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+}
+.search_keyword .btn_pos button{
+	width:28px;
+	height:100%;
+}
+.search_btn .btnsS{
+	display:block;
+}
+.search .sub_mgt5.topline{
+	border-top:1px solid #f1f1f1;
+}
+.search .sub_mgt5.topline:first-child{
+	border-top:none !important;
+	padding-top:0 !important;
+}
+
+/* 서비스소개 > 예술경영지원센터 */
+.greeting{
+	background:#000 url('../images/sub/bg_greeting.jpg') 0 0 no-repeat;
+	background-size:100% auto;
+}
+.greeting [class*='intro_txt']{
+	padding:0 15px;
+}
+.greeting .intro_txt1{
+	text-align:center;
+	padding-top:120px;
+	padding-bottom:200px;
+	transition:opacity 2s 0.5s;
+	opacity:0;
+}
+.greeting .intro_txt1.on{
+	opacity:1;
+}
+.greeting .intro_txt1 .sectit{
+	font-size:1.250em;
+	letter-spacing:0.5em;
+	text-indent:7px;
+	margin-bottom:18px;
+}
+.greeting .intro_txt1 .sectit3{
+	line-height:2.1em;
+}
+.greeting .sectit1{
+	color:#fff;
+	margin-bottom:15px;
+}
+.greeting .txt_desc2{
+	line-height:2.182em;
+}
+.greeting .intro_txt2 .img_wrap:after{
+	background:url('../images/sub/bg_greeting_intro1_1.jpg') 50% 50% no-repeat;
+}
+.greeting .intro_txt2:after{  
+	background:url('../images/sub/bg_greeting_intro1_2.png') 50% 50% no-repeat;
+}
+.greeting .intro_txt2 .img_wrap:after,
+.greeting .intro_txt2:after{
+	display:block;
+	content:'';
+	margin:30px 0 90px;
+	width:100%;
+	background-size:auto 100%;
+	padding-bottom:72%;
+}
+.greeting .intro_txt3{
+	margin-bottom:75px;
+}
+.greeting .intro_txt3:before{
+	display:block;
+	content:'';
+	background:url('../images/sub/bg_greeting_intro2.jpg') 0 50% no-repeat;
+	background-size:100% auto;
+	margin:0 0 30px;
+	width:100%;
+	padding-bottom:48%;
+}
+.greeting .intro_etc{
+	text-align:center;
+	background:url('../images/sub/bg_greeting_intro3.jpg') 50% 60% no-repeat;
+	background-size:100% auto;
+	width:100%;
+	height:170px;
+	box-sizing:border-box;
+}
+.greeting .intro_etc:after{
+	display:block;
+	content:'';
+	background:url('../images/sub/bg_greeting_txt.png') 50% 50% no-repeat;
+	background-size:100% auto;
+	margin:0 auto;
+	width:270px;
+	height:54px;
+}
+.greeting .sectit2{
+	padding:25px 0 20px;
+	color:#fff;
+	letter-spacing:0.6em;
+	padding-left:10px;
+}
+
+/* ContactUS */
+.contact .map_area{
+	overflow:hidden;
+}
+.contact .section1{
+	padding:25px 0;
+}
+.contact .blind + .sub_mgt9{
+	margin-top:0 !important;
+}
+.contact .ftclr_point1{
+	text-decoration:underline;
+}
+.contact .info .txt_desc1{
+	margin-bottom:12px;
+}
+.contact .info [class*='dot_color']:before{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	margin:-2px 5px 0 0;
+	content:'';
+	border-radius:100%;
+	vertical-align:middle;
+}
+.contact .info .dot_color1:before{
+	background-color:#003499;
+}
+.contact .info .dot_color2:before{
+	background-color:#3aa8e6;
+}
+
+@media all and (max-width:767px){
+	/* 마이페이지 > 대여관리 상세 */
+	.filebox2 .rental_view > .cl{
+		padding-right:0 !important;
+		padding-bottom:10px !important;
+	}
+	.filebox2 .rental_view > .clr{
+		display:table-row;
+		width:100%;
+	}
+	.filebox2 .rental_view > .clr .btnsS{
+		width:100%;
+	}
+}
+@media all and (min-width:768px){
+	/* 회원 - 로그인 */
+	.login_wrap .btn_wrap .clc{
+		display:block;
+	}
+	.login_wrap .btn_wrap .btnsB{
+		width:100%;
+	}
+	/* 아이디찾기 */
+	.mem_find .clearfix{
+		position:relative;
+		border:1px solid #ddd;
+	}
+	.mem_find .clearfix:before{
+		position:absolute;
+		left:50%;
+		top:0;
+		bottom:0;
+		width:1px;
+		height:100%;
+		background:#ddd;
+		content:'';
+	}
+	.mem_find .tit_center.mg1{
+		min-height:72px;
+	}
+	.mem_find .tab_style1{
+		display:none;
+	}
+	.mem_find .f_l, .mem_find .f_r{
+		width:50%;
+		border-left:none;
+		padding:35px;
+		box-sizing:border-box;
+	}
+	
+	.mem_find .f_l .tit_center,
+	.mem_find .f_r .tit_center{
+		margin-top:0;
+	}
+
+	.mem_find .pw_find .bbs_write .sectit3{
+		margin-top:20px;
+	}
+
+	/* 작품 > 신청 */
+	.work_apply .view_info_list [class*='txt_desc'].d_b{
+		display:block;
+	}
+
+	/* 작가상세보기 > 작가이력 */
+	.imgexpend.img_size1{
+		width:auto;
+	}
+
+	/* 마이페이지 > 회원정보 */
+	.add_div_list{
+		padding-top:6px;
+	}
+	.add_div_list > li{
+		border-top:none;
+		padding-top:0;
+		margin-top:10px;
+	}
+	.add_div_list > li:first-child{
+		border-top:none !important;
+		padding-top:0 !important;
+		margin-top:0 !important;
+	}
+
+	/* 마이페이지 > 작품관리 > 등록/신규 */
+	.work_art_size .area_group > .choice_wrap{
+		min-width:12%;
+	}
+	.work_art_size .fld{
+		display:inline;
+		vertical-align:middle;
+		width:87%;
+	}
+	.work_art_size .flex_group .cl.txt_desc1,
+	.work_art_size .flex_group .cl.txt_desc1:first-child{
+		padding-left:4% !important;
+	}
+
+	/* 검색 */
+	.search_box{
+		position:relative;
+		display:table;
+		width:100%;
+	}
+	.search_box > [class*='search_']{
+		display:table-cell;
+		vertical-align:bottom;
+	}
+	.search_box .search_btn{
+		position:absolute;
+		right:0;
+		bottom:0;
+		width:100%;
+	}
+	.search_keyword{
+		position:relative;
+		text-align:center;
+		z-index:1;
+	}
+	.search_keyword .input_wrt_wrap{
+		display:inline-block;
+		width:45%;
+	}
+	.search_keyword .input_wrt_wrap .inp{
+		text-align:center;
+	}
+	.search_btn .btnsS{
+		display:inline-block;
+	}
+
+	/* 서비스소개 > 예술경영지원센터 */
+	.greeting{
+		background-image:url('../images/sub/bg_greeting_pc.jpg');
+		background-color:#111;
+	}
+	.greeting .txt_area{
+		position:relative;
+		display:table-cell;
+		vertical-align:middle;
+		box-sizing:border-box;
+		z-index:2;
+	}
+	.greeting [class*='intro_txt']{
+		padding-right:0;
+		padding-left:0;
+	}
+	.greeting .intro_txt1{
+		padding-bottom:100px;
+	}
+	.greeting .intro_txt2 .txt_area{
+		padding-right:30px;
+		width:50%;
+		text-align:right;
+	}
+	.greeting .intro_txt2 .img_wrap{
+		position:relative;
+		display:table;
+		box-sizing:border-box;
+		margin:0 auto;
+		max-width:90%;
+	}
+	.greeting .intro_txt2 .img_wrap:after{
+		display:table-cell;
+		width:50%;
+		background-size:100% auto;
+		padding-bottom:66%;
+	}
+	.greeting .intro_txt2:after{
+		margin:100px 0 125px;
+	}
+	.greeting .intro_txt3{
+		width:auto;
+		display:table;
+		width:100%;
+		vertical-align:middle;
+		height:270px;
+		margin:0 0 100px;
+	}
+	.greeting .intro_txt3 .txt_area{
+		padding:0 3%;
+	}
+	.greeting .intro_txt3:before{
+		display:table-cell;
+		width:57%;
+		padding-bottom:0;
+	}
+	.greeting .intro_etc{
+		background:url('../images/sub/bg_greeting_intro3_pc.jpg') 50% 50% no-repeat;
+		background-size:115% auto;
+	}
+	.greeting .sectit2{
+		padding:35px 0 25px;
+	}
+
+	/* ContactUS */
+	.contact .map_area{
+		height:450px;
+		text-align:center;
+	}
+
+	/* 대여관리(작가,업체) > 상세 */
+	.sales_history{
+		overflow:hidden;
+		position:relative;
+	}
+	.sales_history > .fl{
+		float:left;
+		width:75%;
+	}
+	.sales_history > .fr{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	.sales_history > .fr .view_basic_info th{
+		width:auto;
+	}
+}
+
+@media all and (min-width:1100px){
+	/* 센터소개 - 인사말 */
+	.intro_title{
+		font-size: 1.5em;
+		font-weight: 700
+	}
+	.intro_txt{
+		font-size: 0.875em;
+		font-weight: 400
+	}
+	.intro_psd{
+		font-size: 0.813em;
+		font-weight: 400;
+		margin-top: 80px
+	}
+	.intro_psd > b{
+		font-size: 1.231em;
+		font-weight: 500
+	}
+
+	/* 회원 - 로그인 */
+	.login_wrap{
+		padding-top: 70px
+	}
+	.login_wrap .login_form{
+		width: 400px;
+		margin: 0 auto
+	}
+	.login_wrap .input_wrt_wrap input[type='text'],
+	.login_wrap .input_wrt_wrap input[type='password']{
+		font-size: 1em;
+		height: 60px;
+		line-height: 60px;
+		padding-left: 20px
+	}
+	.login_wrap .comment{
+		font-size: 0.875em;
+		margin-bottom: 40px
+	}
+	.login_wrap .input_wrt_wrap .input_wrap .btn_reset{
+		width: 58px;
+		height: 58px
+	}
+	.login_wrap .input_wrt_wrap .input_wrap .btn_reset .is_ico.isi_reset{
+		margin: 15px auto
+	}
+	.login_wrap .btn_wrap{
+		margin-top: 40px
+	}
+	.login_wrap > ul.member_link{
+		margin-top: 40px
+	}
+	.login_wrap > ul.member_link li{
+		font-size: 0.875em;
+		padding: 0 12px
+	}
+
+	/*** 로그인/회원가입 ***/
+	/* 비밀번호 재발급 >  결과 */
+	.complete_area.ico_guide:before{
+		width:105px;
+		height:80px;
+	}
+	/* 아이디찾기 */
+	.certif_area .gray_box{
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	.certif_area .sectit3{
+		font-size:1.250em;
+	}
+	.certif_area .txt_desc3{
+		margin-top:10px;
+	}
+	.mem_find .f_l, .mem_find .f_r{
+		padding:70px;
+	}
+	.mem_find .f_r.id_find .btn_wrap{
+		margin-top:60px;
+	}
+	.mem_find .tit_center.mg1{
+		min-height:93px;
+	}
+	.mem_find .f_l > .list_ico,
+	.mem_find .f_r > .list_ico{
+		margin-top:32px;
+	}
+	.mem_find .chk_area{
+		margin-top:16px;
+	}
+
+	/* 회원가입 */
+	.join_box .clc:before{
+		width:48px;
+		height:40px;
+	}
+	.join_box .ico1:before{
+		background-position:0 -122px;
+	}
+	.join_box .ico2:before{
+		background-position:-48px -122px;
+	}
+	.join_box .ico3:before{
+		background-position:-96px -122px;
+	}
+	.join_box .ico1:hover:before{
+		background-position:0 -170px;
+	}
+	.join_box .ico2:hover:before{
+		background-position:-48px -170px;
+	}
+	.join_box .ico3:hover:before{
+		background-position:-96px -170px;
+	}
+
+	/* 회원가입 > 본인인증 */
+	.certif_box .clc:before{
+		width:84px;
+		height:96px;
+	}
+	.certif_box .ico1:before{
+		background-position:0 0;
+	}
+	.certif_box .ico2:before{
+		background-position:0 -96px;
+	}
+	.certif_box .ico1:hover:before{
+		background-position:-84px 0;
+	}
+	.certif_box .ico2:hover:before{
+		background-position:-84px -96px;
+	}
+
+	/* 회원가입 > 가입완료 */
+	.complete_area.ico_complete:before{
+		width:88px;
+		height:88px;
+	}
+	/* 로그인 > 휴면계정안내 */
+	.complete_area.ico_dormancy:before{
+		width:80px;
+		height:96px;
+	}
+
+	/* 마이페이지 > 회원탈퇴 */
+	.complete_area.ico_out:before{
+		width:130px;
+		height:96px;
+	}
+
+
+	/*** 고객센터 ***/
+	/* 이용약관 - 이용약관,개인정보처리방침*/
+	.policy_box{
+		margin-top: 60px
+	}
+	.policy_box > h4:first-child{
+		margin-top: 0
+	}
+	.policy_box > h4{
+		margin: 60px 0 12px
+	}
+	.policy_box > h5{
+		color: #111;
+		margin: 40px 0 10px
+	}
+	.policy_box .deco_line:before{
+		height:4px;
+	}
+
+	/* 대여업체 > 상세, 화랑 > 상세 */
+	.address_wrap{
+		margin-top:20px;
+	}
+
+	/* 작가상세보기 > 작가이력 */
+	.history_list  strong.txt_desc1{
+		margin-bottom:4px;
+	}
+	.history_list .txt_desc1 > li,
+	.history_list .txt .area{
+		margin-top:10px;
+	}
+	.history_list .txt .movie_area{
+		margin:20px 0;
+	}
+	/* 마이페이지 > 대여관리 상세 */
+	.view_basic_info .total_area th,
+	.view_basic_info .total_area td{
+		padding:15px 0 10px;
+	}
+
+	/* 검색 */
+	.search_keyword .input_wrt_wrap .inp{
+		height:70px;
+		padding-right:88px;
+	}
+	.search_keyword .btn_pos button{
+		width:45px;
+	}
+
+	/* 서비스소개 > 예술경영지원센터 */
+	.greeting .intro_txt1 .sectit{
+		font-size:5em;
+		letter-spacing:0.43em;
+	}
+	.greeting .intro_txt1{
+		padding-top:210px;
+		padding-bottom:440px;
+	}
+	.greeting .intro_txt2 .img_wrap{
+		width:100%;
+		height:733px;
+	}
+	.greeting .intro_txt2 .img_wrap:after{
+		position:absolute;
+		left:50%;
+		top:0;
+		height:100%;
+		margin:0;
+		background-size:auto;
+		background-attachment:fixed;
+		padding-bottom:0;
+		text-align:left;
+		background-position:70% 65%;
+	}
+	.greeting .intro_txt2:after{
+		margin:200px 0 250px;
+		background-attachment:fixed;
+		background-size:auto;
+		padding-bottom:0;
+		height:570px;
+		background-position:50% 70%;
+	}
+	.greeting .intro_txt2 .txt_area{
+		padding-right:100px;
+	}
+	.greeting .intro_txt3{
+		height:500px;
+		margin:200px 0;
+	}
+	.greeting .intro_txt3:before{
+		background-size:auto;
+		background-attachment:fixed;
+		background-position:0 67%;
+	}
+	.greeting .intro_txt3 .txt_area{
+		padding:0 20px 0 90px;
+	}
+	.greeting .intro_etc{
+		background-size:auto;
+		height:380px;
+	}
+	.greeting .sectit2{
+		padding:90px 0 75px;
+	}
+	.greeting .intro_etc:after{
+		background:url('../images/sub/bg_greeting_txt_pc.png') 0 0 no-repeat;
+		background-size:auto;
+		width:740px;
+		height:105px;
+	}
+
+	/* ContactUS */
+	.contact .map_area{
+		height:300px;
+	}
+	.contact{
+		display:table;
+		width:100%;
+		table-layout:fixed;
+	}
+	.contact .map_area,
+	.contact .section1{
+		display:table-cell;
+		box-sizing:border-box;
+		height:auto;
+	}
+	.contact .section1{
+		vertical-align:middle;
+		padding:85px 90px;		
+	}
+	.contact .sub_mgt9:first-child{
+		margin-top:0 !important;
+	}
+	.contact .ftclr_point1{
+		text-decoration:underline;
+	}
+	.contact .info .txt_desc1{
+		margin-bottom:15px;
+	}
+	.contact .info [class*='dot_color']:before{
+		width:15px;
+		height:15px;
+	}
+
+}
